@@ -10,228 +10,275 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --bg:#f4f1ea; --bg2:#fbf9f4; --ink:#1c1a17; --muted:#6b6457; --line:#e0dacd;
-    --accent:#b4471f; --accent2:#1f6f5c; --chip:#ece7db; --card:#fffdf8;
-    --shadow:0 1px 0 rgba(0,0,0,.03), 0 8px 24px -16px rgba(40,30,10,.30);
-    --radius:14px;
+    --bg:#f5f6f8; --panel:#ffffff; --card:#ffffff;
+    --ink:#13161c; --ink2:#2b313c; --muted:#5d6675; --faint:#8a91a0;
+    --line:#e6e8ee; --line2:#eef0f4;
+    --accent:#2f54eb; --accent-soft:#eaefff;
+    --green:#0b8457; --green-soft:#e6f6ee;
+    --amber:#b25e00; --red:#c0392b;
+    --shadow:0 1px 2px rgba(20,24,40,.04), 0 12px 30px -18px rgba(20,24,40,.22);
+    --radius:18px;
   }
   html[data-theme="dark"]{
-    --bg:#15140f; --bg2:#1b1a14; --ink:#ece7d8; --muted:#9b927f; --line:#2e2b22;
-    --accent:#e8794a; --accent2:#5fc3a6; --chip:#23211a; --card:#1d1b15;
-    --shadow:0 1px 0 rgba(0,0,0,.2), 0 10px 30px -18px rgba(0,0,0,.7);
+    --bg:#0f1115; --panel:#171a21; --card:#181b22;
+    --ink:#f0f2f6; --ink2:#d3d8e2; --muted:#9aa3b2; --faint:#6b7280;
+    --line:#262a33; --line2:#222630;
+    --accent:#6b8afd; --accent-soft:#1d2540;
+    --green:#3fc98f; --green-soft:#13312a;
+    --amber:#e09a3e; --red:#ef6b5e;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 16px 40px -22px rgba(0,0,0,.7);
   }
   *{box-sizing:border-box}
-  html,body{margin:0}
+  html,body{margin:0; height:100%}
   body{
     background:var(--bg); color:var(--ink);
     font-family:"Inter Tight",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-    line-height:1.5; -webkit-font-smoothing:antialiased;
+    font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+    display:flex; flex-direction:column; min-height:100%;
   }
   code,.mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
   a{color:inherit}
-  .wrap{max-width:1120px; margin:0 auto; padding:0 20px}
+  .wrap{width:100%; max-width:860px; margin:0 auto; padding:0 20px}
 
   /* Header */
-  header.top{position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter:saturate(1.4) blur(10px); border-bottom:1px solid var(--line)}
-  .top-inner{display:flex; align-items:center; gap:16px; padding:14px 0; flex-wrap:wrap}
-  .brand{display:flex; align-items:baseline; gap:10px; margin-right:auto}
-  .brand b{font-weight:800; letter-spacing:-.02em; font-size:19px}
+  header.top{position:sticky; top:0; z-index:30; background:color-mix(in srgb,var(--bg) 88%,transparent); backdrop-filter:saturate(1.4) blur(12px); border-bottom:1px solid var(--line)}
+  .top-inner{display:flex; align-items:center; gap:12px; padding:13px 0; flex-wrap:wrap}
+  .brand{display:flex; align-items:baseline; gap:9px; margin-right:auto; font-weight:800; letter-spacing:-.02em; font-size:19px}
   .brand .dot{color:var(--accent)}
-  .brand span{color:var(--muted); font-size:13px}
-  .controls{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+  .brand small{color:var(--muted); font-weight:500; font-size:12.5px; letter-spacing:0}
   select,button,input{font-family:inherit; font-size:14px; color:var(--ink)}
-  select,.btn{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:8px 12px; cursor:pointer}
+  select,.btn{background:var(--panel); border:1px solid var(--line); border-radius:11px; padding:8px 12px; cursor:pointer; transition:border-color .15s}
   .btn:hover,select:hover{border-color:var(--accent)}
-  .search{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:8px 12px; min-width:180px}
+  .search{background:var(--panel); border:1px solid var(--line); border-radius:11px; padding:8px 13px; min-width:160px; transition:border-color .15s}
   .search:focus{outline:none; border-color:var(--accent)}
 
-  /* Hero */
-  .hero{padding:34px 0 10px}
-  .kicker{font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:700}
-  .hero h1{margin:.18em 0 .1em; font-size:clamp(28px,5vw,46px); line-height:1.05; letter-spacing:-.03em; font-weight:800}
-  .hero .sub{color:var(--muted); font-size:15px; max-width:60ch}
-  .stats{display:flex; gap:22px; margin-top:18px; flex-wrap:wrap}
-  .stat b{font-size:26px; font-weight:800; letter-spacing:-.02em}
-  .stat span{display:block; color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.08em}
-  .banner{margin-top:16px; padding:12px 16px; border:1px dashed var(--line); border-radius:12px; background:var(--bg2); color:var(--muted); font-size:14px}
+  /* Stage head */
+  main{flex:1; width:100%; display:flex; flex-direction:column}
+  .stage-head{display:flex; align-items:flex-end; justify-content:space-between; gap:16px; padding:30px 0 14px}
+  .kicker{font-size:12px; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); font-weight:700}
+  .stage-head h1{margin:.2em 0 .15em; font-size:clamp(24px,4.4vw,36px); line-height:1.08; letter-spacing:-.025em; font-weight:800}
+  .stage-head .sub{color:var(--muted); font-size:14.5px; max-width:60ch}
+  .counter{font-family:"JetBrains Mono"; font-size:14px; color:var(--muted); white-space:nowrap; padding-bottom:4px}
+  .counter b{color:var(--ink); font-size:18px}
+  .progress{height:3px; background:var(--line2); border-radius:99px; overflow:hidden; margin:6px 0 2px}
+  .progress > i{display:block; height:100%; width:0; background:var(--accent); border-radius:99px; transition:width .25s ease}
 
-  /* Grid of repo cards */
-  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(330px,1fr)); gap:18px; padding:22px 0 70px}
-  .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:18px 18px 16px; display:flex; flex-direction:column; gap:12px}
-  .repo-head{display:flex; align-items:flex-start; gap:10px}
-  .repo-rank{font-family:"JetBrains Mono"; font-size:12px; color:var(--muted); padding-top:3px; min-width:24px}
-  .repo-name{font-weight:700; font-size:16px; letter-spacing:-.01em; text-decoration:none; word-break:break-word}
-  .repo-name:hover{color:var(--accent); text-decoration:underline}
-  .repo-name .owner{color:var(--muted); font-weight:500}
-  .meta{display:flex; flex-wrap:wrap; gap:7px; align-items:center}
-  .chip{font-size:12px; background:var(--chip); border-radius:999px; padding:3px 9px; color:var(--muted); white-space:nowrap}
-  .chip.lang{color:var(--ink)}
-  .chip.stars b{color:var(--ink)}
-  .chip.today{color:#fff; background:var(--accent); font-weight:600}
-  html[data-theme="dark"] .chip.today{color:#15140f}
-  .desc{color:var(--ink); font-size:14px; opacity:.9}
-  .desc .orig{color:var(--muted); font-size:12.5px; display:block; margin-top:3px}
+  /* Deck */
+  .deck{position:relative; display:flex; align-items:stretch; gap:14px; padding:18px 0 8px}
+  .nav{flex:0 0 auto; align-self:center; width:46px; height:46px; border-radius:50%; border:1px solid var(--line); background:var(--panel); color:var(--ink); font-size:22px; line-height:1; cursor:pointer; display:grid; place-items:center; box-shadow:var(--shadow); transition:transform .12s, border-color .15s, opacity .15s}
+  .nav:hover:not(:disabled){border-color:var(--accent); color:var(--accent); transform:scale(1.06)}
+  .nav:disabled{opacity:.32; cursor:default}
+  .card-stage{flex:1 1 auto; min-width:0}
 
-  .ideas{display:flex; flex-direction:column; gap:10px; margin-top:2px}
-  .ideas-label{font-size:11px; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); font-weight:700; display:flex; align-items:center; gap:8px}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:26px 28px 24px}
+  .card.in-next{animation:slideNext .26s cubic-bezier(.2,.7,.2,1)}
+  .card.in-prev{animation:slidePrev .26s cubic-bezier(.2,.7,.2,1)}
+  @keyframes slideNext{from{opacity:0; transform:translateX(34px)} to{opacity:1; transform:none}}
+  @keyframes slidePrev{from{opacity:0; transform:translateX(-34px)} to{opacity:1; transform:none}}
+
+  .card-top{display:flex; align-items:baseline; gap:12px; margin-bottom:12px}
+  .rank{font-family:"JetBrains Mono"; font-size:13px; color:#fff; background:var(--accent); border-radius:8px; padding:3px 8px; font-weight:700}
+  .repo{font-size:clamp(20px,3.2vw,26px); font-weight:800; letter-spacing:-.02em; text-decoration:none; word-break:break-word; line-height:1.2}
+  .repo .owner{color:var(--muted); font-weight:600}
+  .repo:hover{color:var(--accent)}
+  .repo:hover .owner{color:var(--accent)}
+  .meta{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:14px}
+  .chip{font-size:12.5px; background:var(--line2); border-radius:999px; padding:4px 11px; color:var(--ink2); white-space:nowrap; font-weight:500}
+  .chip.lang::before{content:"●"; color:var(--accent); margin-right:6px; font-size:10px}
+  .chip.today{color:#fff; background:var(--accent); font-weight:700}
+
+  .desc{font-size:16px; color:var(--ink); margin:0 0 4px}
+  .desc .orig{display:block; color:var(--muted); font-size:13px; margin-top:5px}
+
+  .ideas-label{font-size:11.5px; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); font-weight:700; display:flex; align-items:center; gap:10px; margin:22px 0 12px}
   .ideas-label::after{content:""; flex:1; height:1px; background:var(--line)}
-  .idea{border-left:2px solid var(--accent2); padding:2px 0 2px 12px}
-  .idea h4{margin:0 0 4px; font-size:14.5px; font-weight:700; letter-spacing:-.01em}
-  .idea p{margin:0; font-size:13px; color:var(--ink); opacity:.92}
-  .idea .row{display:flex; gap:6px; flex-wrap:wrap; margin-top:7px; align-items:center}
-  .idea .who{font-size:12px; color:var(--accent2); font-weight:600}
-  .idea dl{margin:7px 0 0; display:grid; grid-template-columns:auto 1fr; gap:3px 8px; font-size:12.5px}
-  .idea dt{color:var(--muted); white-space:nowrap}
-  .idea dd{margin:0}
-  .tag{font-size:11px; padding:2px 8px; border-radius:999px; border:1px solid var(--line); color:var(--muted)}
-  .tag.diff-쉬움{color:var(--accent2); border-color:var(--accent2)}
-  .tag.diff-보통{color:var(--accent)}
-  .tag.diff-어려움{color:#b4471f; border-color:var(--accent)}
+  .idea{border:1px solid var(--line); border-left:3px solid var(--green); border-radius:12px; padding:15px 16px; margin-bottom:12px; background:color-mix(in srgb,var(--green-soft) 35%,var(--card))}
+  .idea:last-child{margin-bottom:0}
+  .idea h4{margin:0 0 6px; font-size:17px; font-weight:800; letter-spacing:-.01em; line-height:1.35; display:flex; gap:9px; align-items:center; flex-wrap:wrap}
+  .idea p{margin:0; font-size:15px; color:var(--ink); line-height:1.6}
+  .idea .who{font-size:13.5px; color:var(--green); font-weight:700; margin-top:8px}
+  html[data-theme="dark"] .idea .who{color:var(--green)}
+  .idea dl{margin:11px 0 0; display:grid; grid-template-columns:auto 1fr; gap:6px 12px; font-size:13.5px; align-items:start}
+  .idea dt{color:var(--muted); white-space:nowrap; font-weight:600}
+  .idea dd{margin:0; color:var(--ink2)}
+  .tag{font-size:11.5px; padding:2px 9px; border-radius:999px; border:1px solid var(--line); color:var(--muted); font-weight:600; white-space:nowrap}
+  .tag.diff-쉬움{color:var(--green); border-color:var(--green)}
+  .tag.diff-보통{color:var(--amber); border-color:var(--amber)}
+  .tag.diff-어려움{color:var(--red); border-color:var(--red)}
 
-  footer{border-top:1px solid var(--line); padding:26px 0 50px; color:var(--muted); font-size:13px}
-  footer a{color:var(--accent)}
-  .empty{padding:60px 0; text-align:center; color:var(--muted)}
+  .hint{text-align:center; color:var(--faint); font-size:12.5px; padding:14px 0 6px}
+  .hint kbd{font-family:"JetBrains Mono"; background:var(--panel); border:1px solid var(--line); border-bottom-width:2px; border-radius:6px; padding:1px 6px; font-size:11px; color:var(--ink2)}
+
+  .banner{margin:14px 0 0; padding:11px 15px; border:1px dashed var(--line); border-radius:12px; background:var(--panel); color:var(--muted); font-size:13.5px}
+  .empty{flex:1; display:grid; place-items:center; text-align:center; color:var(--muted); padding:60px 20px; font-size:15px}
+  footer{border-top:1px solid var(--line); padding:22px 0 40px; color:var(--muted); font-size:13px; margin-top:18px}
+  footer a{color:var(--accent); text-decoration:none}
   .hide{display:none !important}
-  @media (max-width:560px){ .grid{grid-template-columns:1fr} .hero{padding-top:24px} }
+
+  @media (max-width:620px){
+    .nav{position:absolute; top:auto; bottom:-2px; z-index:5}
+    .nav.prev{left:0} .nav.next{right:0}
+    .deck{padding-bottom:64px}
+    .card{padding:20px 18px}
+    .stage-head{padding-top:20px}
+  }
 </style>
 </head>
 <body>
 <header class="top">
   <div class="wrap top-inner">
-    <div class="brand"><b>Trending<span class="dot">·</span>Ideas</b><span>GitHub 신규 레포 → 만들 거리</span></div>
-    <div class="controls">
-      <input id="search" class="search" type="search" placeholder="레포·아이디어 검색…" aria-label="검색" />
-      <select id="dateSel" aria-label="날짜 선택"></select>
-      <button id="theme" class="btn" title="테마 전환" aria-label="테마 전환">◐</button>
-    </div>
+    <div class="brand">Trending<span class="dot">·</span>Ideas <small>GitHub 신규 레포 → 만들 거리</small></div>
+    <input id="search" class="search" type="search" placeholder="검색…" aria-label="검색" />
+    <select id="dateSel" aria-label="날짜 선택"></select>
+    <button id="theme" class="btn" title="라이트/다크 전환" aria-label="테마 전환">◐</button>
   </div>
 </header>
 
 <main class="wrap">
-  <section class="hero">
-    <div class="kicker" id="kicker">DAILY GITHUB TRENDING</div>
-    <h1 id="title">불러오는 중…</h1>
-    <div class="sub" id="subtitle">어제 트렌딩에는 없던 신규 레포에서 영감을 받아 만들 수 있는 프로젝트·서비스 아이디어.</div>
-    <div class="stats" id="stats"></div>
+  <div id="stage" class="hide">
+    <div class="stage-head">
+      <div>
+        <div class="kicker" id="kicker">DAILY GITHUB TRENDING</div>
+        <h1 id="title">불러오는 중…</h1>
+        <div class="sub" id="subtitle"></div>
+      </div>
+      <div class="counter" id="counter"></div>
+    </div>
+    <div class="progress"><i id="bar"></i></div>
     <div class="banner hide" id="banner"></div>
-  </section>
-  <section class="grid" id="grid"></section>
+    <div class="deck">
+      <button class="nav prev" id="prev" aria-label="이전" title="이전 (←)">‹</button>
+      <div class="card-stage" id="cardStage"></div>
+      <button class="nav next" id="next" aria-label="다음" title="다음 (→)">›</button>
+    </div>
+    <div class="hint"><kbd>←</kbd> <kbd>→</kbd> 방향키로 이동 · 스와이프/클릭도 가능</div>
+  </div>
   <div class="empty hide" id="empty"></div>
 </main>
 
 <footer class="wrap">
-  매일 자동 생성 · 외부 LLM API 미사용(스킬 인라인 생성) ·
-  데이터: <a href="./data/latest.json">latest.json</a> ·
-  소스: <a href="https://github.com/trending" target="_blank" rel="noopener">github.com/trending</a>
+  매일 자동 생성 · 외부 LLM API 미사용 ·
+  데이터 <a href="./data/latest.json">latest.json</a> ·
+  소스 <a href="https://github.com/trending" target="_blank" rel="noopener">github.com/trending</a>
 </footer>
 
 <script>
-const $ = (s)=>document.querySelector(s);
-const esc = (s)=> (s==null?"":String(s)).replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const fmtNum = (n)=> (n==null||isNaN(n))?"":Number(n).toLocaleString("en-US");
+const $=(s)=>document.querySelector(s);
+const esc=(s)=>(s==null?"":String(s)).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtNum=(n)=>(n==null||isNaN(n))?"":Number(n).toLocaleString("en-US");
+const fmtDate=(d)=>{try{const[y,m,da]=d.split("-");return `${y}.${m}.${da}`;}catch(e){return d;}};
 
-// theme
+// theme: default LIGHT; honor manual choice only.
 const root=document.documentElement;
-const savedTheme=localStorage.getItem("ti-theme");
-if(savedTheme) root.setAttribute("data-theme",savedTheme);
-else if(matchMedia("(prefers-color-scheme: dark)").matches) root.setAttribute("data-theme","dark");
+const saved=localStorage.getItem("ti-theme");
+root.setAttribute("data-theme", saved==="dark"?"dark":"light");
 $("#theme").onclick=()=>{const t=root.getAttribute("data-theme")==="dark"?"light":"dark";root.setAttribute("data-theme",t);localStorage.setItem("ti-theme",t);};
 
-let CURRENT=null;
+let DAY=null, REPOS=[], IDX=0;
 
-async function loadJSON(url){ const r=await fetch(url,{cache:"no-cache"}); if(!r.ok) throw new Error(url+" "+r.status); return r.json(); }
+async function loadJSON(u){const r=await fetch(u,{cache:"no-cache"}); if(!r.ok) throw new Error(u+" "+r.status); return r.json();}
 
-function fmtDate(d){ try{ const [y,m,da]=d.split("-"); return `${y}.${m}.${da}`; }catch(e){ return d; } }
-
-function ideaCard(idea){
+function ideaHTML(idea){
   const diff=esc(idea.difficulty||"");
   const rows=[
-    idea.why_now ? `<dt>왜 지금</dt><dd>${esc(idea.why_now)}</dd>`:"",
-    idea.mvp ? `<dt>MVP</dt><dd>${esc(idea.mvp)}</dd>`:"",
-    idea.monetization ? `<dt>수익화</dt><dd>${esc(idea.monetization)}</dd>`:""
+    idea.why_now?`<dt>왜 지금</dt><dd>${esc(idea.why_now)}</dd>`:"",
+    idea.mvp?`<dt>MVP</dt><dd>${esc(idea.mvp)}</dd>`:"",
+    idea.monetization?`<dt>수익화</dt><dd>${esc(idea.monetization)}</dd>`:""
   ].join("");
   return `<div class="idea">
-    <h4>${esc(idea.title||"")}</h4>
+    <h4>${esc(idea.title||"")}${diff?`<span class="tag diff-${diff}">${diff}</span>`:""}</h4>
     <p>${esc(idea.what||"")}</p>
-    <div class="row">
-      ${idea.target_user?`<span class="who">▸ ${esc(idea.target_user)}</span>`:""}
-      ${diff?`<span class="tag diff-${diff}">${diff}</span>`:""}
-    </div>
+    ${idea.target_user?`<div class="who">▸ ${esc(idea.target_user)}</div>`:""}
     ${rows?`<dl>${rows}</dl>`:""}
   </div>`;
 }
-
-function repoCard(r){
-  const [owner,name] = (r.name||"/").split("/");
+function cardHTML(r){
+  const [owner,name]=(r.name||"/").split("/");
   const meta=[
     r.language?`<span class="chip lang">${esc(r.language)}</span>`:"",
-    (r.stars!=null)?`<span class="chip stars">★ <b>${fmtNum(r.stars)}</b></span>`:"",
+    (r.stars!=null)?`<span class="chip">★ ${fmtNum(r.stars)}</span>`:"",
     (r.stars_today!=null)?`<span class="chip today">+${fmtNum(r.stars_today)} today</span>`:""
   ].join("");
-  const ideas=(r.ideas||[]).map(ideaCard).join("");
-  return `<article class="card" data-text="${esc((r.name+' '+(r.description||'')+' '+(r.description_ko||'')+' '+(r.ideas||[]).map(i=>i.title+' '+i.what+' '+i.target_user).join(' ')).toLowerCase())}">
-    <div class="repo-head">
-      <div class="repo-rank">${r.rank!=null?String(r.rank).padStart(2,"0"):"–"}</div>
-      <a class="repo-name" href="${esc(r.url||'#')}" target="_blank" rel="noopener"><span class="owner">${esc(owner)}/</span>${esc(name||"")}</a>
+  const ideas=(r.ideas||[]).map(ideaHTML).join("");
+  return `<article class="card">
+    <div class="card-top">
+      <span class="rank">${r.rank!=null?String(r.rank).padStart(2,"0"):"–"}</span>
+      <a class="repo" href="${esc(r.url||'#')}" target="_blank" rel="noopener"><span class="owner">${esc(owner)}/</span>${esc(name||"")}</a>
     </div>
     <div class="meta">${meta}</div>
-    ${(r.description_ko||r.description)?`<div class="desc">${esc(r.description_ko||r.description)}${r.description_ko&&r.description?`<span class="orig">${esc(r.description)}</span>`:""}</div>`:""}
-    ${ideas?`<div class="ideas"><div class="ideas-label">만들 수 있는 것 · ${(r.ideas||[]).length}</div>${ideas}</div>`:""}
+    ${(r.description_ko||r.description)?`<p class="desc">${esc(r.description_ko||r.description)}${r.description_ko&&r.description?`<span class="orig">${esc(r.description)}</span>`:""}</p>`:""}
+    ${ideas?`<div class="ideas-label">만들 수 있는 것 · ${(r.ideas||[]).length}</div>${ideas}`:""}
   </article>`;
 }
-
-function render(day){
-  CURRENT=day;
-  const repos=day.new_repos||[];
-  $("#title").textContent = day.is_baseline ? `${fmtDate(day.date)} · 트렌딩 시드` : `${fmtDate(day.date)} 신규 트렌딩`;
-  $("#subtitle").textContent = day.is_baseline
-    ? "첫 스냅샷(기준선)입니다. 내일부터 ‘어제 대비 신규’만 추려서 보여줍니다."
-    : "어제 트렌딩에는 없던 신규 레포에서 영감을 받아 만들 수 있는 프로젝트·서비스 아이디어.";
-  $("#stats").innerHTML =
-    `<div class="stat"><b>${day.trending_count??"–"}</b><span>오늘 트렌딩</span></div>`+
-    `<div class="stat"><b>${repos.length}</b><span>${day.is_baseline?"시드 레포":"신규 레포"}</span></div>`+
-    `<div class="stat"><b>${repos.reduce((a,r)=>a+((r.ideas||[]).length),0)}</b><span>아이디어</span></div>`;
-  const banner=$("#banner");
-  if(day.note){ banner.textContent=day.note; banner.classList.remove("hide"); } else banner.classList.add("hide");
-
-  const grid=$("#grid"), empty=$("#empty");
-  if(!repos.length){
-    grid.innerHTML="";
-    empty.textContent= day.is_baseline ? "시드 데이터가 없습니다." : "오늘은 어제 대비 신규 트렌딩 레포가 없습니다. 내일 다시 확인해 주세요.";
-    empty.classList.remove("hide");
-  } else {
-    empty.classList.add("hide");
-    grid.innerHTML=repos.map(repoCard).join("");
-  }
-  applyFilter();
+function show(i,dir){
+  if(!REPOS.length) return;
+  IDX=Math.max(0,Math.min(i,REPOS.length-1));
+  const stage=$("#cardStage");
+  stage.innerHTML=cardHTML(REPOS[IDX]);
+  const card=stage.firstElementChild;
+  if(dir){ card.classList.add(dir>0?"in-next":"in-prev"); }
+  $("#counter").innerHTML=`<b>${String(IDX+1).padStart(2,"0")}</b> / ${REPOS.length}`;
+  $("#bar").style.width=((IDX+1)/REPOS.length*100)+"%";
+  $("#prev").disabled=IDX<=0;
+  $("#next").disabled=IDX>=REPOS.length-1;
+  stage.scrollIntoView({block:"nearest"});
 }
+function go(d){ if(REPOS.length) show(IDX+d,d); }
+$("#prev").onclick=()=>go(-1);
+$("#next").onclick=()=>go(1);
+document.addEventListener("keydown",(e)=>{
+  if(document.activeElement && document.activeElement.id==="search") return;
+  if(e.key==="ArrowRight"){e.preventDefault();go(1);}
+  else if(e.key==="ArrowLeft"){e.preventDefault();go(-1);}
+  else if(e.key==="Home"){show(0,-1);} else if(e.key==="End"){show(REPOS.length-1,1);}
+});
+// swipe
+let tx=null;
+$("#cardStage").addEventListener("touchstart",e=>{tx=e.changedTouches[0].clientX;},{passive:true});
+$("#cardStage").addEventListener("touchend",e=>{ if(tx==null)return; const dx=e.changedTouches[0].clientX-tx; if(Math.abs(dx)>50) go(dx<0?1:-1); tx=null; },{passive:true});
 
 function applyFilter(){
   const q=$("#search").value.trim().toLowerCase();
-  let shown=0;
-  document.querySelectorAll("#grid .card").forEach(c=>{
-    const ok=!q || c.dataset.text.includes(q);
-    c.classList.toggle("hide",!ok); if(ok) shown++;
-  });
-  const empty=$("#empty");
-  if(q && shown===0 && (CURRENT?.new_repos||[]).length){ empty.textContent=`“${q}”에 해당하는 결과가 없습니다.`; empty.classList.remove("hide"); }
-  else if(q){ empty.classList.add("hide"); }
+  const base=DAY?.new_repos||[];
+  REPOS = q ? base.filter(r=>(r.name+' '+(r.description||'')+' '+(r.description_ko||'')+' '+(r.ideas||[]).map(i=>i.title+' '+i.what+' '+i.target_user+' '+i.why_now).join(' ')).toLowerCase().includes(q)) : base.slice();
+  const stage=$("#stage"), empty=$("#empty");
+  if(!REPOS.length){
+    stage.classList.add("hide"); empty.classList.remove("hide");
+    empty.textContent = q ? `“${$("#search").value.trim()}”에 해당하는 결과가 없습니다.`
+      : (DAY?.is_baseline ? "시드 데이터가 없습니다." : "오늘은 어제 대비 신규 트렌딩 레포가 없습니다. 내일 다시 확인해 주세요.");
+  } else {
+    empty.classList.add("hide"); stage.classList.remove("hide");
+    show(0,0);
+  }
 }
-$("#search").addEventListener("input", applyFilter);
+$("#search").addEventListener("input",applyFilter);
+
+function render(day){
+  DAY=day;
+  $("#title").textContent = day.is_baseline ? `${fmtDate(day.date)} · 트렌딩 시드` : `${fmtDate(day.date)} 신규 트렌딩`;
+  $("#subtitle").textContent = day.is_baseline
+    ? "첫 스냅샷(기준선)입니다. 내일부터 ‘어제 대비 신규’만 보여줍니다."
+    : "어제 트렌딩에는 없던 신규 레포로 만들 수 있는 프로젝트·서비스.";
+  const b=$("#banner");
+  if(day.note){b.textContent=day.note;b.classList.remove("hide");} else b.classList.add("hide");
+  $("#search").value="";
+  applyFilter();
+}
 
 async function boot(){
   let dates=[];
-  try{ const idx=await loadJSON("./data/index.json"); dates=(idx.dates||[]).slice().sort().reverse(); }catch(e){}
+  try{const idx=await loadJSON("./data/index.json"); dates=(idx.dates||[]).slice().sort().reverse();}catch(e){}
   const sel=$("#dateSel");
   if(!dates.length){
-    $("#title").textContent="아직 데이터가 없습니다";
-    $("#subtitle").textContent="스킬을 한 번 실행하면 이곳에 매일의 신규 트렌딩 아이디어가 쌓입니다.";
-    $("#stats").innerHTML=""; sel.classList.add("hide"); return;
+    $("#stage").classList.add("hide");
+    const empty=$("#empty"); empty.classList.remove("hide");
+    empty.textContent="아직 데이터가 없습니다. 스킬을 한 번 실행하면 매일의 신규 트렌딩 아이디어가 쌓입니다.";
+    sel.classList.add("hide"); return;
   }
   sel.innerHTML=dates.map(d=>`<option value="${d}">${fmtDate(d)}</option>`).join("");
-  sel.onchange=async()=>{ try{ render(await loadJSON(`./data/${sel.value}.json`)); }catch(e){ $("#empty").textContent="데이터를 불러오지 못했습니다."; $("#empty").classList.remove("hide"); } };
+  sel.onchange=async()=>{ try{render(await loadJSON(`./data/${sel.value}.json`));}catch(e){$("#stage").classList.add("hide");$("#empty").classList.remove("hide");$("#empty").textContent="데이터를 불러오지 못했습니다.";} };
   try{ render(await loadJSON(`./data/${dates[0]}.json`)); }
-  catch(e){ try{ render(await loadJSON("./data/latest.json")); }catch(e2){ $("#empty").textContent="데이터를 불러오지 못했습니다."; $("#empty").classList.remove("hide"); } }
+  catch(e){ try{ render(await loadJSON("./data/latest.json")); }catch(e2){ $("#stage").classList.add("hide"); $("#empty").classList.remove("hide"); $("#empty").textContent="데이터를 불러오지 못했습니다."; } }
 }
 boot();
 </script>
