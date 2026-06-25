@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.yeoukkori.trending</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/Users/johyeonseong/.local/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin</string>
+    <key>HOME</key>
+    <string>/Users/johyeonseong</string>
+  </dict>
+
+  <key>SoftResourceLimits</key>
+  <dict>
+    <key>NumberOfFiles</key>
+    <integer>16384</integer>
+  </dict>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>-lc</string>
+    <string>/usr/bin/caffeinate -dimsu /Users/johyeonseong/Downloads/playground/trending/run_trending_ideas.sh</string>
+  </array>
+
+  <!-- 07:00 KST daily (system TZ is Asia/Seoul). Runs before the 09:00 KST UTC
+       trending reset, so the daily tab still reflects the full previous UTC day. -->
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>7</integer>
+    <key>Minute</key>
+    <integer>0</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/tmp/yeoukkori-trending-ideas.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/yeoukkori-trending-ideas.err</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>
