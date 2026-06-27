@@ -23,7 +23,7 @@
   <array>
     <string>/bin/zsh</string>
     <string>-lc</string>
-    <string>/usr/bin/caffeinate -dimsu /Users/johyeonseong/Downloads/playground/trending/run_trending_ideas.sh</string>
+    <string>/usr/bin/caffeinate -dimsu /Users/johyeonseong/playground/trending/run_trending_ideas.sh</string>
   </array>
 
   <!-- 07:00 KST daily (system TZ is Asia/Seoul). Runs before the 09:00 KST UTC

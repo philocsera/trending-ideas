@@ -2,7 +2,7 @@
 
 매일 아침, **GitHub Trending(daily)에 어제는 없던 신규 레포**를 추리고, 그 레포에서 영감을 받아 만들 수 있는 **프로젝트·서비스 아이디어**를 한국어로 제안해 GitHub Pages에 올린다.
 
-- **외부 LLM API 미사용.** 아이디어는 정해진 시각에 자동 실행되는 Claude Code 스킬이 **inline으로 직접** 만든다 → 구독료 외 추가 비용 0.
+- 아이디어는 정해진 시각에 자동 실행되는 Codex 스킬이 inline으로 직접 만든다.
 - **서버 0.** 스크랩·판별·생성·발행이 전부 로컬 launchd 잡 한 번으로 끝난다. GitHub Pages는 정적 파일만 서빙.
 - 기존 `job_feed` / `good_morning` 파이프라인과 동일한 컨벤션(스킬=JSON 작성, 래퍼=git push, 정적 뷰어).
 
@@ -10,7 +10,7 @@
 
 ```
 launchd(07:00 KST) → run_trending_ideas.sh
-   → claude -p "/trending_ideas <오늘>" --permission-mode bypassPermissions
+   → codex --search exec ...
        1. WebFetch github.com/trending?since=daily   (인증 불필요)
        2. state/last.json(어제 목록)과 차집합 → 신규 레포
        3. 신규 레포별 README 보강(WebFetch, 병렬) → 한국어 아이디어 2~3개 생성
@@ -35,7 +35,7 @@ trending/
 └── com.yeoukkori.trending.plist # launchd 스케줄(07:00 KST)
 ```
 
-스킬 본문: `~/.claude/commands/trending_ideas.md` (슬래시 명령 `/trending_ideas`)
+스킬 본문: `/Users/johyeonseong/.codex/skills/trending-ideas`
 
 ## 데이터 스키마 (`data/<date>.json`)
 
@@ -62,7 +62,7 @@ trending/
 
 1) **GitHub 저장소 생성 + 푸시** (public이어야 Pages 무료)
 ```bash
-cd /Users/johyeonseong/Downloads/playground/trending
+cd /Users/johyeonseong/playground/trending
 gh repo create philocsera/trending-ideas --public --source . --remote origin --push
 # gh가 없으면: GitHub에서 빈 repo 만들고
 #   git remote add origin https://github.com/philocsera/trending-ideas.git
@@ -74,7 +74,7 @@ gh repo create philocsera/trending-ideas --public --source . --remote origin --p
 
 3) **매일 자동 실행 등록** (launchd)
 ```bash
-cp /Users/johyeonseong/Downloads/playground/trending/com.yeoukkori.trending.plist \
+cp /Users/johyeonseong/playground/trending/com.yeoukkori.trending.plist \
    ~/Library/LaunchAgents/com.yeoukkori.trending.plist
 launchctl unload ~/Library/LaunchAgents/com.yeoukkori.trending.plist 2>/dev/null
 launchctl load   ~/Library/LaunchAgents/com.yeoukkori.trending.plist
@@ -83,7 +83,7 @@ launchctl list | grep trending     # 등록 확인
 
 4) **수동 테스트(선택)** — 내일까지 안 기다리고 바로 한 번 돌려보기
 ```bash
-/Users/johyeonseong/Downloads/playground/trending/run_trending_ideas.sh
+/Users/johyeonseong/playground/trending/run_trending_ideas.sh
 tail -n 40 /tmp/yeoukkori-trending-ideas.log
 ```
 
@@ -91,7 +91,7 @@ tail -n 40 /tmp/yeoukkori-trending-ideas.log
 
 `file://`로 열면 fetch가 막히므로 간단한 서버로 연다:
 ```bash
-cd /Users/johyeonseong/Downloads/playground/trending && python3 -m http.server 8765
+cd /Users/johyeonseong/playground/trending && python3 -m http.server 8765
 # → http://localhost:8765/
 ```
 
