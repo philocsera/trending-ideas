@@ -1,20 +1,22 @@
 {
   "version": 1,
-  "date": "2026-06-29",
-  "captured_at": "2026-06-29T09:45:47+0900",
+  "date": "2026-06-30",
+  "captured_at": "2026-06-30T07:04:02+0900",
   "repos": [
     "simplex-chat/simplex-chat",
-    "ripienaar/free-for-dev",
-    "commaai/openpilot",
-    "xbtlin/ai-berkshire",
-    "robbyant/lingbot-map",
-    "deusdata/codebase-memory-mcp",
+    "msitarzewski/agency-agents",
     "cupy/cupy",
-    "altic-dev/fluidvoice",
-    "opendatalab/mineru",
-    "hkuds/vibe-trading",
-    "bytebytegohq/system-design-101",
-    "usestrix/strix",
-    "browser-use/video-use"
+    "altic-dev/FluidVoice",
+    "soxoj/maigret",
+    "commaai/openpilot",
+    "ripienaar/free-for-dev",
+    "logto-io/logto",
+    "xbtlin/ai-berkshire",
+    "browser-use/video-use",
+    "Unclecheng-li/VulnClaw",
+    "0xNyk/council-of-high-intelligence",
+    "HKUDS/Vibe-Trading",
+    "refactoringhq/tolaria",
+    "veracrypt/VeraCrypt"
   ]
 }
