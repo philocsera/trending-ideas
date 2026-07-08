@@ -1,20 +1,22 @@
 {
   "version": 1,
-  "date": "2026-07-08",
-  "captured_at": "2026-07-08T11:14:55+0900",
+  "date": "2026-07-09",
+  "captured_at": "2026-07-09T07:05:38+0900",
   "repos": [
-    "MadsLorentzen/ai-job-search",
-    "Zackriya-Solutions/meetily",
     "addyosmani/agent-skills",
     "ruvnet/RuView",
-    "asgeirtj/system_prompts_leaks",
-    "TencentCloud/CubeSandbox",
-    "AhmadIbrahiim/Website-downloader",
-    "steipete/CodexBar",
-    "dotnet/skills",
+    "TencentCloud/TencentDB-Agent-Memory",
+    "prisma/prisma",
+    "mvanhorn/last30days-skill",
+    "argoproj/argo-cd",
     "iOfficeAI/OfficeCLI",
+    "asgeirtj/system_prompts_leaks",
+    "obra/superpowers",
+    "alibaba/zvec",
+    "Diolinux/PhotoGIMP",
+    "wonderwhy-er/DesktopCommanderMCP",
+    "huxingyi/autoremesher",
     "bradautomates/claude-video",
-    "kyutai-labs/pocket-tts",
-    "hesreallyhim/awesome-claude-code"
+    "TencentCloud/CubeSandbox"
   ]
 }
