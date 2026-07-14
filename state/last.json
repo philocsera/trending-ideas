@@ -1,24 +1,17 @@
 {
   "version": 1,
-  "date": "2026-07-13",
-  "captured_at": "2026-07-13T08:59:46+0900",
+  "date": "2026-07-14",
+  "captured_at": "2026-07-14T11:03:18+0900",
   "repos": [
-    "Dicklesworthstone/destructive_command_guard",
-    "wonderwhy-er/DesktopCommanderMCP",
+    "OpenCut-app/OpenCut",
     "HKUDS/Vibe-Trading",
-    "PrefectHQ/prefect",
+    "moeru-ai/airi",
     "Shubhamsaboo/awesome-llm-apps",
-    "anthropics/claude-cookbooks",
-    "home-assistant/core",
-    "Crosstalk-Solutions/project-nomad",
-    "ColeMurray/background-agents",
-    "k1tbyte/Wand-Enhancer",
-    "pingdotgg/t3code",
-    "virattt/ai-hedge-fund",
-    "chen08209/FlClash",
-    "davila7/claude-code-templates",
-    "par274/sharpemu",
-    "malisper/pgrust",
-    "Nutlope/hallmark"
+    "Nutlope/hallmark",
+    "Raphire/Win11Debloat",
+    "Graphify-Labs/graphify",
+    "hasaneyldrm/exercises-dataset",
+    "github/spec-kit",
+    "coreyhaines31/marketingskills"
   ]
 }
