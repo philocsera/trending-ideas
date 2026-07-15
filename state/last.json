@@ -1,17 +1,22 @@
 {
   "version": 1,
-  "date": "2026-07-14",
-  "captured_at": "2026-07-14T11:03:18+0900",
+  "date": "2026-07-15",
+  "captured_at": "2026-07-15T09:43:25+0900",
   "repos": [
-    "OpenCut-app/OpenCut",
-    "HKUDS/Vibe-Trading",
-    "moeru-ai/airi",
     "Shubhamsaboo/awesome-llm-apps",
+    "mattpocock/skills",
+    "Dicklesworthstone/destructive_command_guard",
+    "OpenCut-app/OpenCut",
+    "virattt/ai-hedge-fund",
     "Nutlope/hallmark",
+    "HKUDS/Vibe-Trading",
     "Raphire/Win11Debloat",
-    "Graphify-Labs/graphify",
     "hasaneyldrm/exercises-dataset",
-    "github/spec-kit",
-    "coreyhaines31/marketingskills"
+    "penpot/penpot",
+    "AIEraDev/Clypra",
+    "par274/sharpemu",
+    "chenyme/grok2api",
+    "Graphify-Labs/graphify",
+    "HenryNdubuaku/maths-cs-ai-compendium"
   ]
 }
