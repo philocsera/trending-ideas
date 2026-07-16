@@ -1,22 +1,20 @@
 {
   "version": 1,
-  "date": "2026-07-15",
-  "captured_at": "2026-07-15T09:43:25+0900",
+  "date": "2026-07-16",
+  "captured_at": "2026-07-16T09:30:13+0900",
   "repos": [
-    "Shubhamsaboo/awesome-llm-apps",
-    "mattpocock/skills",
-    "Dicklesworthstone/destructive_command_guard",
     "OpenCut-app/OpenCut",
-    "virattt/ai-hedge-fund",
     "Nutlope/hallmark",
+    "mattpocock/skills",
+    "moeru-ai/airi",
+    "Dicklesworthstone/destructive_command_guard",
     "HKUDS/Vibe-Trading",
-    "Raphire/Win11Debloat",
-    "hasaneyldrm/exercises-dataset",
-    "penpot/penpot",
-    "AIEraDev/Clypra",
-    "par274/sharpemu",
-    "chenyme/grok2api",
-    "Graphify-Labs/graphify",
-    "HenryNdubuaku/maths-cs-ai-compendium"
+    "openinterpreter/openinterpreter",
+    "HKUDS/DeepTutor",
+    "HenryNdubuaku/maths-cs-ai-compendium",
+    "Shubhamsaboo/awesome-llm-apps",
+    "coreyhaines31/marketingskills",
+    "YimMenu/YimMenuV2",
+    "hasaneyldrm/exercises-dataset"
   ]
 }
