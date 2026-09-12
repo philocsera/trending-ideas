@@ -1,23 +1,24 @@
 {
   "version": 1,
-  "date": "2026-09-11",
-  "captured_at": "2026-09-11T08:50:31+09:00",
+  "date": "2026-09-12",
+  "captured_at": "2026-09-12T10:00:16+09:00",
   "repos": [
     "ayghri/i-have-adhd",
     "bilawalsidhu/gods-eye-view",
-    "obra/superpowers",
-    "alsk1992/cloddsbot",
-    "tencent/teamai-cli",
-    "alexsjones/llmfit",
-    "liquidslr/system-design-notes",
-    "cathrynlavery/diagram-design",
-    "freestylefly/awesome-gpt-image-2",
+    "nab138/iloader",
+    "melgarafael/deskcommcrm",
+    "vastsa/pi-desktop",
     "armory3d/armorpaint",
-    "diegosouzapw/omniroute",
-    "justvugg/colibri",
-    "thu-maic/openmaic",
+    "alsk1992/cloddsbot",
     "nashsu/llm_wiki",
-    "vercel-labs/skills",
-    "vastsa/pi-desktop"
+    "obra/superpowers",
+    "sonarr/sonarr",
+    "jihe520/mathmodelagent",
+    "p1neapplexpress/openflux",
+    "jordan-gibbs/hyperresearch",
+    "alphaxiv/openresearch",
+    "github/spec-kit",
+    "pascalorg/editor"
   ]
 }
+

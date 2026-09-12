@@ -1,0 +1,339 @@
+{
+  "date": "2026-09-12",
+  "generated_at": "2026-09-12T10:00:16+09:00",
+  "source": "github.com/trending?since=daily",
+  "is_baseline": false,
+  "trending_count": 16,
+  "new_count": 9,
+  "new_repos": [
+    {
+      "rank": 3,
+      "name": "nab138/iloader",
+      "url": "https://github.com/nab138/iloader",
+      "description": "User friendly sideloader",
+      "description_ko": "iOS 기기에 앱을 쉽게 사이드로딩하는 도구.",
+      "language": "TypeScript",
+      "stars": 2908,
+      "stars_today": 50,
+      "topics": [
+        "idevice",
+        "ios",
+        "sideloading",
+        "sidestore"
+      ],
+      "ideas": [
+        {
+          "title": "팀용 iOS 사내앱 배포 체크리스트",
+          "target_user": "MDM 없이 사내 테스트 앱을 배포하는 소규모 iOS 팀",
+          "what": "IPA 배포 전 서명 만료, UDID 등록, 설치 순서를 한 화면에서 점검하는 로컬 대시보드다.",
+          "why_now": "사이드로딩 도구의 사용성 수요를 기업 내부 배포의 반복 업무로 확장할 수 있다.",
+          "mvp": "IPA와 기기 목록을 입력하면 설치 전 체크리스트와 만료 알림을 출력한다.",
+          "difficulty": "보통",
+          "monetization": "팀당 월 구독으로 기기·앱 수를 확장 과금"
+        },
+        {
+          "title": "부모용 교육 앱 설치 도우미",
+          "target_user": "자녀의 iPad에 교육용 오픈소스 앱을 설치하려는 보호자",
+          "what": "검증된 교육 앱의 설치 가이드와 기기별 설정을 단계별 카드로 제공한다.",
+          "why_now": "사이드로딩의 복잡함을 비기술 사용자를 위한 큐레이션 경험으로 낮출 수 있다.",
+          "mvp": "앱 10개와 iPad 모델별 설치·권한 설정 안내를 제공한다.",
+          "difficulty": "쉬움",
+          "monetization": "추천 앱 제휴와 프리미엄 원격 설정 가이드"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "melgarafael/deskcommcrm",
+      "url": "https://github.com/melgarafael/deskcommcrm",
+      "description": "Open-source AI sales OS — self-hosted CRM with native AI agents + WhatsApp (WAHA). Open alternative to Kommo, Octadesk & Intercom for any business that sells by chat. MCP-ready, multi-tenant, LGPD.",
+      "description_ko": "AI 에이전트와 WhatsApp을 내장한 자체 호스팅 오픈소스 채팅 영업 CRM.",
+      "language": "TypeScript",
+      "stars": 1347,
+      "stars_today": 152,
+      "topics": [
+        "ai",
+        "ai-agents",
+        "chatbot",
+        "crm",
+        "customer-support",
+        "ecommerce",
+        "mcp",
+        "sales-automation",
+        "self-hosted",
+        "supabase",
+        "whatsapp"
+      ],
+      "ideas": [
+        {
+          "title": "카카오톡 견적 리드 정리함",
+          "target_user": "카카오톡으로 상담·견적을 받는 1~10인 서비스 사업자",
+          "what": "대화에서 고객명, 요청 서비스, 예산, 다음 약속을 추출해 파이프라인으로 정리한다.",
+          "why_now": "대화형 CRM과 에이전트가 이메일 중심 CRM에 남은 국내 소상공인 공백을 메운다.",
+          "mvp": "대화 내보내기 파일을 올리면 리드 카드와 후속 답변 초안을 만든다.",
+          "difficulty": "보통",
+          "monetization": "상담자 좌석당 월 구독"
+        },
+        {
+          "title": "채팅 상담 품질 코치",
+          "target_user": "온라인 쇼핑몰 고객상담 팀장",
+          "what": "상담 로그를 분석해 응답 지연, 누락된 구매 신호, 재문의 위험을 사례별로 제시한다.",
+          "why_now": "채팅 CRM의 구조화된 이력과 AI 에이전트를 교육·품질 관리에 재활용할 수 있다.",
+          "mvp": "CSV 상담 로그 1개를 분석해 주간 개선 리포트를 생성한다.",
+          "difficulty": "보통",
+          "monetization": "월별 상담 건수 기반 과금"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "sonarr/sonarr",
+      "url": "https://github.com/Sonarr/Sonarr",
+      "description": "Smart PVR for newsgroup and bittorrent users.",
+      "description_ko": "시리즈 콘텐츠를 자동으로 관리하는 스마트 PVR 도구.",
+      "language": "C#",
+      "stars": 15736,
+      "stars_today": 191,
+      "topics": [],
+      "ideas": [
+        {
+          "title": "가족 시청 일정 캘린더",
+          "target_user": "여러 OTT와 방송을 함께 보는 가족",
+          "what": "관심 시리즈의 공개일을 모아 가족 캘린더와 알림으로 보여주고, 스포일러 없는 요약을 제공한다.",
+          "why_now": "자동 추적 방식은 분산된 콘텐츠 공개 일정을 한곳에 정리하는 데 적합하다.",
+          "mvp": "TMDb 목록을 받아 다음 2주 공개작 캘린더를 만든다.",
+          "difficulty": "쉬움",
+          "monetization": "광고 없는 가족 플랜"
+        },
+        {
+          "title": "영상 제작자용 레퍼런스 워치리스트",
+          "target_user": "드라마·유튜브 편집자와 영상 기획자",
+          "what": "장르·연출 키워드별로 공개 예정작을 추적하고, 에피소드별 메모를 팀과 공유한다.",
+          "why_now": "PVR의 지속 추적 모델을 불법 다운로드가 아닌 합법적 리서치 워크플로로 전환한다.",
+          "mvp": "공개 일정 RSS와 메모 태그, Slack 알림을 제공한다.",
+          "difficulty": "보통",
+          "monetization": "팀 워크스페이스 월 구독"
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "name": "jihe520/mathmodelagent",
+      "url": "https://github.com/jihe520/MathModelAgent",
+      "description": "🤖📐专为数学建模设计的 Agent & skills ,自动完成数学建模，生成一份完整的可以直接提交的论文。 An Agent Designed for Mathematical Modeling ,Automatically complete mathmodel and generate a complete paper ready for submission.",
+      "description_ko": "수학 모델링을 자동화하고 제출 가능한 보고서 초안을 만드는 에이전트와 스킬.",
+      "language": "Python",
+      "stars": 4858,
+      "stars_today": 129,
+      "topics": [
+        "agent",
+        "llm",
+        "mathmodel",
+        "skills"
+      ],
+      "ideas": [
+        {
+          "title": "데이터 경진대회 모델링 코치",
+          "target_user": "첫 데이터·수학 모델링 대회에 나가는 대학생",
+          "what": "문제 설명과 데이터셋을 받아 가설, 변수 정의, 검증 계획을 단계별 템플릿으로 안내한다.",
+          "why_now": "모델링 에이전트 수요를 답안 대필이 아닌 재현 가능한 학습 과정에 맞출 수 있다.",
+          "mvp": "CSV 업로드 후 문제 구조화 캔버스와 3가지 모델 후보를 생성한다.",
+          "difficulty": "보통",
+          "monetization": "대회 시즌별 학생 플랜"
+        },
+        {
+          "title": "운영팀 용량 시뮬레이터",
+          "target_user": "콜센터·물류센터의 주니어 운영 관리자",
+          "what": "수요와 인력 데이터를 넣으면 대기시간·비용을 비교하는 간단한 시뮬레이션 보고서를 만든다.",
+          "why_now": "수학 모델링을 현장 의사결정 언어로 포장하면 전문 분석가가 없는 팀도 쓸 수 있다.",
+          "mvp": "도착률·처리시간·인원 입력으로 시나리오 3개를 그래프로 비교한다.",
+          "difficulty": "어려움",
+          "monetization": "보고서 내보내기와 팀 공유 기능 유료화"
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "name": "p1neapplexpress/openflux",
+      "url": "https://github.com/p1neappleXpress/OpenFlux",
+      "description": "Network stack research tool. TCP tunnel with pluggable transports.",
+      "description_ko": "교체 가능한 전송 방식을 갖춘 TCP 터널 기반 네트워크 스택 연구 도구.",
+      "language": "Go",
+      "stars": 1149,
+      "stars_today": 198,
+      "topics": [],
+      "ideas": [
+        {
+          "title": "원격 근무망 품질 실험실",
+          "target_user": "사내 VPN 품질을 진단하는 스타트업 인프라 담당자",
+          "what": "여러 전송 방식에서 지연, 손실, 재연결 시간을 측정해 지역·통신사별 비교 리포트를 만든다.",
+          "why_now": "플러그형 터널 구조가 실제 네트워크 조건별 전송 전략 실험을 쉽게 만든다.",
+          "mvp": "두 서버 사이 TCP 터널 측정과 CSV 리포트만 제공한다.",
+          "difficulty": "어려움",
+          "monetization": "팀별 측정 에이전트와 장기 이력 구독"
+        },
+        {
+          "title": "개발자용 터널 장애 재현 키트",
+          "target_user": "네트워크 오류를 재현하기 어려운 백엔드 개발팀",
+          "what": "지연·패킷 손실·연결 끊김 프로필을 적용해 QA 환경에서 장애를 재현하는 CLI다.",
+          "why_now": "전송 계층을 교체하는 연구 도구의 개념을 제품 신뢰성 테스트에 적용할 수 있다.",
+          "mvp": "세 가지 네트워크 프로필과 Docker 예제를 제공한다.",
+          "difficulty": "보통",
+          "monetization": "사내 CI 연동 기능 유료화"
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "name": "jordan-gibbs/hyperresearch",
+      "url": "https://github.com/jordan-gibbs/hyperresearch",
+      "description": "Agent-driven research knowledge base. Agents collect, search, and synthesize web research into a persistent, searchable wiki.",
+      "description_ko": "에이전트가 웹 리서치를 수집·검색·종합해 지속형 위키로 만드는 지식 베이스.",
+      "language": "Python",
+      "stars": 2615,
+      "stars_today": 153,
+      "topics": [
+        "agents",
+        "agentskills",
+        "claude-code",
+        "deep-research",
+        "deep-research-agent"
+      ],
+      "ideas": [
+        {
+          "title": "B2B 영업 계정 브리프",
+          "target_user": "하루에 여러 잠재 고객을 조사하는 초기 스타트업 세일즈 담당자",
+          "what": "회사명마다 제품, 최근 뉴스, 채용, 경쟁사 언급을 출처 링크와 함께 한 장 브리프로 축적한다.",
+          "why_now": "지속형 연구 위키는 일회성 검색을 반복 가능한 계정 인텔리전스로 바꾼다.",
+          "mvp": "회사 URL 입력 후 출처 5개와 콜 준비 질문을 생성한다.",
+          "difficulty": "보통",
+          "monetization": "조사 크레딧 기반 팀 구독"
+        },
+        {
+          "title": "정책 변화 레이더",
+          "target_user": "규제 영향을 받는 핀테크·헬스케어 PM",
+          "what": "관심 법령·기관을 등록하면 변경 소식을 수집하고 제품 요구사항에 미칠 영향을 메모로 연결한다.",
+          "why_now": "에이전트 기반 수집과 검색 가능한 위키가 흩어진 규제 정보를 누적 관리한다.",
+          "mvp": "기관 RSS 10개 모니터링과 주간 변경 요약을 제공한다.",
+          "difficulty": "보통",
+          "monetization": "도메인별 모니터링 좌석 과금"
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "name": "alphaxiv/openresearch",
+      "url": "https://github.com/alphaXiv/OpenResearch",
+      "description": "Run parallel research agents with any model",
+      "description_ko": "어떤 모델로도 병렬 리서치 에이전트를 실행하는 도구.",
+      "language": "Rust",
+      "stars": 1277,
+      "stars_today": 120,
+      "topics": [],
+      "ideas": [
+        {
+          "title": "제품 결정 반대근거 수집기",
+          "target_user": "중요한 제품 결정을 앞둔 PM과 창업자",
+          "what": "결정안을 입력하면 시장, 기술, 사용자 관점의 병렬 조사 결과를 찬반 근거와 출처로 나눈다.",
+          "why_now": "병렬 에이전트가 확증편향을 줄이는 빠른 사전 조사에 특히 잘 맞는다.",
+          "mvp": "한 질문에 세 역할 에이전트와 출처 목록을 실행한다.",
+          "difficulty": "보통",
+          "monetization": "리서치 실행 횟수 기반 과금"
+        },
+        {
+          "title": "논문 세미나 팩 생성기",
+          "target_user": "주간 논문 세미나를 운영하는 연구실 학생",
+          "what": "주제를 주면 병렬 에이전트가 핵심 논문, 상반된 결과, 토론 질문을 수집해 발표 팩을 만든다.",
+          "why_now": "여러 모델을 선택할 수 있는 병렬 연구 방식이 분야별 최신성 검증에 유리하다.",
+          "mvp": "arXiv 검색과 5장짜리 세미나 노트 Markdown을 만든다.",
+          "difficulty": "쉬움",
+          "monetization": "연구실 단위 월 구독"
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "name": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+      "description_ko": "명세 기반 개발을 시작하도록 돕는 도구 모음.",
+      "language": "Python",
+      "stars": 135770,
+      "stars_today": 1015,
+      "topics": [
+        "ai",
+        "copilot",
+        "development",
+        "engineering",
+        "prd",
+        "spec",
+        "spec-driven"
+      ],
+      "ideas": [
+        {
+          "title": "고객 인터뷰에서 PRD까지",
+          "target_user": "문서 작성 시간이 부족한 초기 스타트업 PM",
+          "what": "인터뷰 메모를 기능 명세, 수용 기준, 미해결 질문으로 변환하고 개발자 검토 링크를 만든다.",
+          "why_now": "명세 기반 개발 도구의 구조를 비정형 고객 언어의 제품 결정에 연결할 수 있다.",
+          "mvp": "회의 메모 붙여넣기 후 PRD와 사용자 스토리를 Markdown으로 생성한다.",
+          "difficulty": "보통",
+          "monetization": "프로젝트별 협업 좌석 구독"
+        },
+        {
+          "title": "프리랜서 개발 견적 명세서",
+          "target_user": "요구사항이 불명확한 웹 개발 프리랜서",
+          "what": "클라이언트 요청을 범위, 제외 항목, 검수 기준으로 정리해 견적 전 합의 문서를 만든다.",
+          "why_now": "스펙 우선 워크플로가 재작업과 범위 확장을 줄이는 현실적인 계약 도구가 된다.",
+          "mvp": "요청서 업로드 후 견적용 명세 PDF 초안을 출력한다.",
+          "difficulty": "쉬움",
+          "monetization": "문서 내보내기 건별 결제"
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "name": "pascalorg/editor",
+      "url": "https://github.com/pascalorg/editor",
+      "description": "Open-source 3D architectural editor with a local CLI, MCP tools, and practical workflows for humans and AI agents.",
+      "description_ko": "로컬 CLI와 MCP 도구를 갖춘 오픈소스 3D 건축 편집기.",
+      "language": "TypeScript",
+      "stars": 23602,
+      "stars_today": 106,
+      "topics": [
+        "3d",
+        "agent-skills",
+        "ai-agents",
+        "architecture",
+        "bim",
+        "cad",
+        "floorplan",
+        "local-first",
+        "mcp",
+        "parametric-design",
+        "react-three-fiber",
+        "threejs"
+      ],
+      "ideas": [
+        {
+          "title": "카페 창업 동선 미리보기",
+          "target_user": "소형 카페·팝업스토어를 준비하는 예비 창업자",
+          "what": "평면도를 바탕으로 좌석·주문대·작업대 배치를 3D로 비교하고 동선 체크리스트를 제공한다.",
+          "why_now": "브라우저 3D 편집과 에이전트 도구가 설계 전문가가 아닌 창업자의 초기 검토를 가능하게 한다.",
+          "mvp": "사각형 공간에서 가구 배치와 통로 폭 경고를 보여준다.",
+          "difficulty": "보통",
+          "monetization": "프로젝트별 내보내기와 전문가 검토 연결"
+        },
+        {
+          "title": "부동산 리모델링 옵션 견적판",
+          "target_user": "소형 주택 리모델링 상담을 하는 인테리어 업체",
+          "what": "고객과 함께 3D 공간에서 마감·가구 옵션을 바꾸고 즉시 견적 범위와 변경 이력을 공유한다.",
+          "why_now": "로컬 우선 3D 편집과 MCP 연동은 현장에서도 빠른 협업형 설계를 만들기 좋다.",
+          "mvp": "방 하나의 벽·바닥·가구 옵션과 PDF 견적 요약을 제공한다.",
+          "difficulty": "어려움",
+          "monetization": "시공사 좌석당 월 구독"
+        }
+      ]
+    }
+  ]
+}
+
