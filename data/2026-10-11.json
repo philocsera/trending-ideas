@@ -1,0 +1,205 @@
+{
+  "date": "2026-10-11",
+  "generated_at": "2026-10-11T08:10:14+0900",
+  "source": "github.com/trending?since=daily",
+  "is_baseline": false,
+  "trending_count": 13,
+  "new_count": 13,
+  "new_repos": [
+    {
+      "rank": 1,
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "description_ko": "에이전트로 앱 동작부터 네이티브 바이너리까지 역공학하는 도구입니다.",
+      "language": "TypeScript",
+      "stars": 71197,
+      "stars_today": 25784,
+      "topics": ["agent-skills", "ai-agents", "binary-analysis", "mcp", "reverse-engineering", "static-analysis"],
+      "ideas": [
+        {"title":"취약점 재현 노트 생성기","target_user":"보안 컨설턴트와 버그바운티 연구자","what":"실행 파일 분석 로그와 함수 주석을 받아 재현 단계, 영향 범위, 증거 스크린샷 목록을 정리하는 보고서 워크스페이스입니다.","why_now":"에이전트 기반 바이너리 분석이 초기 탐색 시간을 줄여 주므로, 사람이 최종 검증에 집중하는 협업 도구를 만들 수 있습니다.","mvp":"Ghidra 내보내기 파일 한 개를 업로드하면 취약 의심 함수와 보고서 초안을 생성합니다.","difficulty":"어려움","monetization":"팀당 월 구독과 보고서 내보내기 크레딧"},
+        {"title":"레거시 앱 API 지도","target_user":"인수한 데스크톱 소프트웨어를 유지보수하는 개발팀","what":"바이너리 실행 흐름을 관찰해 파일·네트워크·DB 접근을 화면별 API 지도로 바꾸고, 변경 위험 지점을 표시합니다.","why_now":"소스가 없거나 오래된 제품을 현대화하는 수요가 늘었고, REA 같은 분석 흐름이 관찰 자동화의 기반이 됩니다.","mvp":"Windows 실행 파일과 한 번의 사용 시나리오에서 호출된 도메인·파일 경로 타임라인을 보여 줍니다.","difficulty":"어려움","monetization":"프로젝트별 분석 패키지"}
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "boykopovar/AnyPS5",
+      "url": "https://github.com/boykopovar/AnyPS5",
+      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+      "description_ko": "PS5 실행 파일을 Linux와 Windows로 자동 포팅하기 위한 도구입니다.",
+      "language": "C++",
+      "stars": 26644,
+      "stars_today": 5831,
+      "topics": ["game-porting", "ps5", "spir-v", "vulkan"],
+      "ideas": [
+        {"title":"게임 호환성 리포트 허브","target_user":"Linux 휴대용 게임기 사용자와 커뮤니티 테스터","what":"사용자가 게임별 실행 결과, 그래픽 깨짐, 성능 설정을 제출하면 기기·드라이버별 호환성 카드를 만드는 커뮤니티 서비스입니다.","why_now":"게임 포팅과 Vulkan 레이어에 대한 관심이 높아져 파편화된 시행착오를 구조화할 시점입니다.","mvp":"게임명, 기기, 드라이버, FPS, 스크린샷만 받는 검색 가능한 호환성 표를 만듭니다.","difficulty":"보통","monetization":"제조사·액세서리 제휴와 고급 필터 구독"},
+        {"title":"Vulkan 이식 준비 진단","target_user":"PC 출시를 검토하는 인디 게임 스튜디오","what":"빌드 설정과 그래픽 API 사용 흔적을 점검해 Windows·Linux 이식 시 필요한 셰이더, 입력, 파일 시스템 작업을 체크리스트로 제공합니다.","why_now":"자동 포팅 도구의 등장으로 완전한 재개발보다 사전 진단의 가치가 커졌습니다.","mvp":"Unreal 또는 Unity 프로젝트 설정 파일을 읽어 플랫폼별 위험 항목 10개를 출력합니다.","difficulty":"보통","monetization":"타이틀별 리포트 판매"}
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "storytold/artcraft",
+      "url": "https://github.com/storytold/artcraft",
+      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
+      "description_ko": "아티스트·디자이너·영상 제작자를 위한 의도 중심의 창작 엔진입니다.",
+      "language": "Rust",
+      "stars": 14352,
+      "stars_today": 3217,
+      "topics": ["3d-graphics", "ai", "aivideo", "filmmaking", "imagegeneration"],
+      "ideas": [
+        {"title":"광고 콘티 일관성 보드","target_user":"1인 브랜드 영상 제작자","what":"제품 사진, 브랜드 색, 대본을 넣으면 장면별 구도·소품·조명 지시와 참조 이미지를 묶어 주는 콘티 보드입니다.","why_now":"생성형 영상이 빨라질수록 결과물의 브랜드 일관성을 통제하는 사전 설계가 병목이 됩니다.","mvp":"15초 광고 대본을 6개 장면 카드와 이미지 프롬프트로 변환합니다.","difficulty":"보통","monetization":"월간 프로젝트 수 기준 구독"},
+        {"title":"감독용 수정 언어 번역기","target_user":"디자이너와 외주 편집자에게 피드백하는 영상 감독","what":"추상적인 피드백을 색감·카메라·전환·사운드의 실행 가능한 수정 지시로 바꾸고 버전별로 비교합니다.","why_now":"의도 중심 창작 도구가 주목받으며 생성 결과를 다듬는 명확한 언어가 팀 생산성을 좌우합니다.","mvp":"영상 링크와 자연어 피드백 한 줄에서 타임코드 없는 수정 체크리스트를 만듭니다.","difficulty":"쉬움","monetization":"프리랜서 팀용 좌석 구독"}
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "description_ko": "코딩 에이전트를 위한 44종의 편집 디자인 다이어그램과 독립형 HTML·SVG 출력 모음입니다.",
+      "language": "HTML",
+      "stars": 48889,
+      "stars_today": 1189,
+      "topics": ["agent-skills", "codex", "data-visualization", "diagrams", "svg"],
+      "ideas": [
+        {"title":"PR 변경 설명 카드","target_user":"비개발 이해관계자에게 배포를 설명하는 엔지니어","what":"Git diff와 이슈 설명을 받아 사용자 흐름, 데이터 이동, 롤백 지점을 한 장 SVG 카드로 요약합니다.","why_now":"에이전트가 코드를 빠르게 바꾸는 만큼 검토자가 이해할 수 있는 시각적 설명이 필요합니다.","mvp":"PR URL 대신 붙여넣은 diff에서 컴포넌트 관계도 한 장을 생성합니다.","difficulty":"보통","monetization":"조직용 Git 연동 구독"},
+        {"title":"회의용 시스템 지도 템플릿","target_user":"컨설팅·제품 전략 팀","what":"인터뷰 메모를 입력하면 고객 여정, 이해관계자, 시스템 경계를 편집 가능한 HTML·SVG 다이어그램으로 정리합니다.","why_now":"깔끔한 독립형 SVG 산출물은 문서와 슬라이드 사이를 오갈 때 재사용하기 좋습니다.","mvp":"메모 10줄을 서비스 블루프린트 한 장으로 변환합니다.","difficulty":"쉬움","monetization":"템플릿 팩과 팀 워크스페이스"}
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "description_ko": "도구 출력 격리, 세션 메모리, MCP·훅 라우팅으로 AI 코딩 에이전트의 컨텍스트 창을 최적화합니다.",
+      "language": "TypeScript",
+      "stars": 26293,
+      "stars_today": 178,
+      "topics": ["claude-code", "codex", "context-mode", "mcp", "skills"],
+      "ideas": [
+        {"title":"에이전트 비용 영수증","target_user":"AI 코딩 도구를 도입한 소프트웨어 팀 리드","what":"세션별 토큰, 반복 도구 호출, 유효 변경량을 연결해 낭비되는 컨텍스트와 절감 기회를 보여 주는 대시보드입니다.","why_now":"여러 에이전트 플랫폼을 병행하면서 비용보다 원인 파악이 어려워졌고, 컨텍스트 최적화 신호를 활용할 수 있습니다.","mvp":"CLI 로그 파일을 업로드하면 상위 5개 과다 출력 명령과 절감 추정치를 표시합니다.","difficulty":"보통","monetization":"개발자 수 기준 B2B 구독"},
+        {"title":"온콜용 세션 기억 금고","target_user":"교대 근무로 장애를 대응하는 SRE 팀","what":"에이전트와 사람이 확인한 가설, 명령 결과, 보류된 다음 단계를 사건 단위로 압축해 다음 교대조에 전달합니다.","why_now":"세션 메모리 보존 패턴이 성숙하면서 긴 장애 대응의 맥락 손실을 줄일 수 있습니다.","mvp":"Slack 대화와 터미널 메모를 붙이면 교대 인계 템플릿을 생성합니다.","difficulty":"보통","monetization":"인시던트 수 기준 팀 요금제"}
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "description": "Skills for Real Engineers. Straight from my .agents directory.",
+      "description_ko": "실무 엔지니어를 위한 에이전트 스킬 모음입니다.",
+      "language": "Shell",
+      "stars": 284399,
+      "stars_today": 1737,
+      "topics": [],
+      "ideas": [
+        {"title":"팀 스킬 린터","target_user":"사내 에이전트 지침을 관리하는 개발 생산성 팀","what":"SKILL.md와 에이전트 규칙을 검사해 모순된 지시, 비밀값 노출, 실행 불가능한 명령, 누락된 검증 절차를 찾아줍니다.","why_now":"공개 스킬 컬렉션이 확산되면서 복사한 지침의 품질을 자동 점검할 필요가 생겼습니다.","mvp":"폴더를 스캔해 위험 규칙과 수정 제안을 Markdown으로 출력합니다.","difficulty":"쉬움","monetization":"사설 레지스트리와 정책 검사 유료 플랜"},
+        {"title":"업무별 에이전트 레시피 마켓","target_user":"반복적인 기술 업무를 자동화하려는 소규모 스타트업","what":"배포 점검, 고객 이슈 재현, 데이터 정리처럼 결과 기준이 명확한 스킬 레시피를 테스트 결과와 함께 공유·복제하는 카탈로그입니다.","why_now":"엔지니어링 스킬이 개인 폴더를 넘어 재사용 가능한 작업 단위로 자리 잡고 있습니다.","mvp":"YAML 메타데이터와 README만으로 검색·즐겨찾기·복제 링크를 제공합니다.","difficulty":"보통","monetization":"검증 레시피 판매 수수료"}
+      ]
+    },
+    {
+      "rank": 7,
+      "name": "flutter/flutter",
+      "url": "https://github.com/flutter/flutter",
+      "description": "Flutter makes it easy and fast to build beautiful apps for mobile and beyond",
+      "description_ko": "모바일을 넘어 여러 플랫폼용 아름다운 앱을 빠르게 만드는 프레임워크입니다.",
+      "language": "Dart",
+      "stars": 179496,
+      "stars_today": 164,
+      "topics": ["cross-platform", "dart", "desktop", "flutter", "mobile", "web"],
+      "ideas": [
+        {"title":"현장 점검 오프라인 폼","target_user":"인터넷이 불안정한 매장·시설 관리자","what":"사진, 체크리스트, 서명, 위치를 오프라인에 저장하고 연결 시 본사로 동기화하는 크로스플랫폼 점검 앱입니다.","why_now":"하나의 코드베이스로 모바일과 데스크톱 현장 도구를 함께 배포할 수 있는 Flutter 생태계가 성숙했습니다.","mvp":"점검표 한 종류와 사진 첨부, CSV 내보내기만 제공합니다.","difficulty":"보통","monetization":"지점 수 기준 월 과금"},
+        {"title":"부모-교사 주간 카드","target_user":"소규모 어린이 교육기관","what":"교사가 태블릿으로 활동 사진과 한 줄 관찰을 입력하면 부모 앱에 주간 요약 카드가 전달되는 서비스입니다.","why_now":"모바일·웹을 함께 지원해야 하는 소규모 기관에 단일 UI 개발 방식이 특히 유리합니다.","mvp":"학급 한 개에서 사진 3장과 관찰 메모를 보호자별로 공유합니다.","difficulty":"보통","monetization":"원아 수 기반 구독"}
+      ]
+    },
+    {
+      "rank": 8,
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "description": "An Open Source Machine Learning Framework for Everyone",
+      "description_ko": "누구나 사용할 수 있는 오픈소스 머신러닝 프레임워크입니다.",
+      "language": "C++",
+      "stars": 200714,
+      "stars_today": 24,
+      "topics": ["deep-learning", "machine-learning", "neural-network", "python", "tensorflow"],
+      "ideas": [
+        {"title":"공장 소리 이상 알림","target_user":"센서 예산이 적은 소형 제조업체","what":"스마트폰으로 녹음한 모터·팬·펌프 소리를 학습해 평소와 다른 패턴을 알려 주는 설비 점검 도구입니다.","why_now":"온디바이스 모델 배포가 쉬워져 민감한 현장 음원을 외부로 보내지 않고도 시작할 수 있습니다.","mvp":"기계 한 종류의 정상 녹음 20개를 등록해 이상 점수만 표시합니다.","difficulty":"보통","monetization":"장비 수 기반 구독"},
+        {"title":"폐기물 분류 카메라 가이드","target_user":"학교·행사장의 자원순환 담당자","what":"카메라로 비춘 물건을 재활용·일반·보증금 반환 분류와 지역별 배출 안내로 연결하는 키오스크 앱입니다.","why_now":"경량 이미지 모델과 저가 태블릿 조합으로 현장 안내를 자동화할 수 있습니다.","mvp":"10개 자주 틀리는 품목만 인식해 올바른 통을 화면에 표시합니다.","difficulty":"보통","monetization":"기관 설치비와 관리 구독"}
+      ]
+    },
+    {
+      "rank": 9,
+      "name": "hugohe3/ppt-master",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
+      "description_ko": "문서·주제를 실제 네이티브 PowerPoint 슬라이드와 차트·애니메이션·내레이션으로 만드는 AI 도구입니다.",
+      "language": "Python",
+      "stars": 59388,
+      "stars_today": 515,
+      "topics": ["ai-agent", "office", "powerpoint", "pptx", "presentation", "slides"],
+      "ideas": [
+        {"title":"입찰 제안서 슬라이드 조립기","target_user":"반복 입찰을 준비하는 중소 IT 컨설팅사","what":"RFP, 과거 제안서, 회사 소개 자료에서 요구사항 대응표와 맞춤형 발표 자료 초안을 조립합니다.","why_now":"네이티브 PPTX 생성이 가능해지며 마감 직전에도 템플릿을 깨지 않고 자동화할 수 있습니다.","mvp":"RFP PDF와 회사 소개 PPTX에서 8장짜리 목차·대응 전략 초안을 만듭니다.","difficulty":"보통","monetization":"제안서 건당 크레딧"},
+        {"title":"수업자료 낭독 슬라이드","target_user":"강의 영상을 직접 만들기 어려운 강사","what":"강의 노트로부터 시각 자료, 발표자 노트, 문단별 음성 대본을 만들고 학습자가 넘겨 볼 수 있는 PPTX를 제공합니다.","why_now":"슬라이드와 내레이션을 함께 생성하는 흐름이 갖춰져 강의 준비 시간을 줄일 수 있습니다.","mvp":"Markdown 한 파일을 5장 슬라이드와 각 장 30초 분량 노트로 변환합니다.","difficulty":"쉬움","monetization":"월간 생성 분량 구독"}
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "pytorch/pytorch",
+      "url": "https://github.com/pytorch/pytorch",
+      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+      "description_ko": "강력한 GPU 가속을 갖춘 Python용 텐서·동적 신경망 프레임워크입니다.",
+      "language": "Python",
+      "stars": 104130,
+      "stars_today": 81,
+      "topics": ["autograd", "deep-learning", "gpu", "machine-learning", "python", "tensor"],
+      "ideas": [
+        {"title":"소상공인 수요 예측 노트북","target_user":"SKU 수가 적은 온라인 셀러","what":"주문 CSV와 행사 일정만으로 품목별 다음 4주 수요와 품절 위험을 계산해 주는 로컬 분석 앱입니다.","why_now":"GPU 가속 프레임워크를 쓰되 작은 데이터셋에도 적용 가능한 시계열 모델이 많아졌습니다.","mvp":"CSV 업로드 후 상위 20개 품목의 재주문 알림을 제공합니다.","difficulty":"보통","monetization":"월 주문량 기준 구독"},
+        {"title":"운동 자세 개인 코치","target_user":"홈트레이닝 영상을 촬영하는 초보자","what":"휴대폰 영상에서 스쿼트·런지 같은 기본 동작의 관절 각도를 추적해 반복 횟수와 주의 구간을 알려 줍니다.","why_now":"PyTorch 기반 비전 모델을 기기별로 실험·개선하기 쉬워 개인화된 자세 피드백을 빠르게 검증할 수 있습니다.","mvp":"스쿼트 한 종목에서 무릎·허리 각도와 반복 횟수를 표시합니다.","difficulty":"어려움","monetization":"프리미엄 운동 리포트 구독"}
+      ]
+    },
+    {
+      "rank": 11,
+      "name": "huggingface/transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
+      "description_ko": "텍스트·비전·음성·멀티모달 모델의 추론과 학습을 위한 모델 정의 프레임워크입니다.",
+      "language": "Python",
+      "stars": 167228,
+      "stars_today": 94,
+      "topics": ["audio", "llm", "machine-learning", "nlp", "speech-recognition", "transformer", "vlm"],
+      "ideas": [
+        {"title":"현장 인터뷰 인사이트 보드","target_user":"주 5~20건의 고객 인터뷰를 하는 UX 리서처","what":"녹음·전사·사진을 함께 넣으면 반복 불만, 인용문, 관찰 장면을 근거 링크와 함께 클러스터링합니다.","why_now":"음성·텍스트·이미지를 함께 다루는 멀티모달 모델이 실무 리서치 정리에 적용 가능한 수준이 되었습니다.","mvp":"전사 3개에서 상위 주제와 인용문만 추출합니다.","difficulty":"보통","monetization":"리서처 좌석당 구독"},
+        {"title":"다국어 안전 문구 검사","target_user":"해외 판매를 시작하는 D2C 브랜드","what":"상품 설명과 경고 문구를 여러 언어로 비교해 번역 누락, 과장 표현, 문화적으로 어색한 표현 후보를 표시합니다.","why_now":"다국어 Transformer 모델을 API 종속 없이 조합할 수 있어 반복적인 사전 검수에 적합합니다.","mvp":"한국어·영어 문구 두 개를 넣으면 불일치 문장과 검토 우선순위를 보여 줍니다.","difficulty":"보통","monetization":"문서 분량 기반 과금"}
+      ]
+    },
+    {
+      "rank": 12,
+      "name": "anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "description_ko": "Claude Cowork에서 지식 근로자가 쓰도록 만든 오픈소스 플러그인 모음입니다.",
+      "language": "Python",
+      "stars": 28789,
+      "stars_today": 626,
+      "topics": [],
+      "ideas": [
+        {"title":"부서별 회의 후속 작업 봇","target_user":"회의가 많지만 전담 PM이 없는 10~50명 조직","what":"회의록을 부서별 결정, 담당자, 마감일, 막힌 의존성으로 분해하고 다음 회의 전에 미완료 항목만 모읍니다.","why_now":"지식 근로자용 플러그인 생태계가 성장하며 범용 챗봇보다 업무 맥락을 가진 좁은 자동화가 가치 있어졌습니다.","mvp":"회의록 붙여넣기에서 담당자 태그가 포함된 할 일 표를 생성합니다.","difficulty":"쉬움","monetization":"활성 사용자당 월 구독"},
+        {"title":"정책 문서 차이 설명기","target_user":"규정 변경을 공지해야 하는 인사·컴플라이언스 담당자","what":"이전·이후 정책 문서를 비교해 직원 행동에 영향을 주는 변경점과 FAQ 초안을 역할별로 작성합니다.","why_now":"문서 중심 업무 플러그인은 반복되는 비교·요약·배포 작업을 안전하게 분리하기 좋습니다.","mvp":"두 PDF의 텍스트를 붙여 넣으면 중요 변경 10개와 공지 이메일 초안을 만듭니다.","difficulty":"보통","monetization":"문서 건당 크레딧"}
+      ]
+    },
+    {
+      "rank": 13,
+      "name": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "description_ko": "LLM 코딩의 함정을 관찰한 내용을 바탕으로 Claude Code 행동을 개선하는 단일 CLAUDE.md 파일입니다.",
+      "language": null,
+      "stars": 218229,
+      "stars_today": 279,
+      "topics": [],
+      "ideas": [
+        {"title":"코딩 에이전트 회고 코치","target_user":"AI 보조 코딩을 도입한 개인 개발자","what":"작업 로그와 diff를 보고 과도한 재작성, 검증 누락, 요구사항 추측 같은 습관을 주간 회고와 개인 규칙 초안으로 바꿉니다.","why_now":"에이전트 사용 팁이 축적되면서 일반 프롬프트보다 개인의 실제 실패 패턴을 반영한 규칙이 더 유용해졌습니다.","mvp":"Git diff와 작업 메모 한 개를 분석해 다음 작업용 규칙 3개를 제안합니다.","difficulty":"쉬움","monetization":"개인 Pro 구독"},
+        {"title":"PR 전 에이전트 체크포인트","target_user":"주니어 개발자가 많은 제품 팀","what":"PR을 열기 전 에이전트가 요구사항, 테스트 증거, 위험한 가정, 변경하지 않은 영역을 질문 형식으로 확인하는 도구입니다.","why_now":"코딩 에이전트의 대표적 함정을 명시한 규칙을 팀별 품질 게이트로 전환할 수 있습니다.","mvp":"PR 설명과 diff를 넣으면 8개 체크 질문과 누락 증거 목록을 생성합니다.","difficulty":"쉬움","monetization":"Git 호스팅 연동 팀 플랜"}
+      ]
+    }
+  ]
+}

@@ -1,24 +1,20 @@
 {
   "version": 1,
-  "date": "2026-09-12",
-  "captured_at": "2026-09-12T10:00:16+09:00",
+  "date": "2026-10-11",
+  "captured_at": "2026-10-11T08:10:14+0900",
   "repos": [
-    "ayghri/i-have-adhd",
-    "bilawalsidhu/gods-eye-view",
-    "nab138/iloader",
-    "melgarafael/deskcommcrm",
-    "vastsa/pi-desktop",
-    "armory3d/armorpaint",
-    "alsk1992/cloddsbot",
-    "nashsu/llm_wiki",
-    "obra/superpowers",
-    "sonarr/sonarr",
-    "jihe520/mathmodelagent",
-    "p1neapplexpress/openflux",
-    "jordan-gibbs/hyperresearch",
-    "alphaxiv/openresearch",
-    "github/spec-kit",
-    "pascalorg/editor"
+    "morluto/rea",
+    "boykopovar/anyps5",
+    "storytold/artcraft",
+    "cathrynlavery/diagram-design",
+    "mksglu/context-mode",
+    "mattpocock/skills",
+    "flutter/flutter",
+    "tensorflow/tensorflow",
+    "hugohe3/ppt-master",
+    "pytorch/pytorch",
+    "huggingface/transformers",
+    "anthropics/knowledge-work-plugins",
+    "multica-ai/andrej-karpathy-skills"
   ]
 }
-
