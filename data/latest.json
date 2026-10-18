@@ -1,9 +1,205 @@
 {
-  "date": "2026-10-12",
-  "generated_at": "2026-10-12T07:00:27+0900",
+  "date": "2026-10-18",
+  "generated_at": "2026-10-18T09:32:10+0900",
   "source": "github.com/trending?since=daily",
   "is_baseline": false,
-  "trending_count": 0,
-  "new_count": 0,
-  "new_repos": []
+  "trending_count": 13,
+  "new_count": 13,
+  "new_repos": [
+    {
+      "rank": 1,
+      "name": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "description_ko": "Anthropic이 관리하는 고품질 Claude Code 플러그인 공식 디렉터리.",
+      "language": "Python",
+      "stars": 41745,
+      "stars_today": 1397,
+      "topics": ["claude-code", "mcp", "skills"],
+      "ideas": [
+        {"title":"팀용 AI 플러그인 승인 카탈로그", "target_user":"Claude Code·Codex를 도입한 개발 조직의 플랫폼 팀", "what":"허용된 플러그인·스킬만 검색, 설치, 버전 고정할 수 있는 사내 카탈로그를 만든다.", "why_now":"코딩 에이전트 플러그인이 급증하면서 보안 검토와 재현 가능한 개발 환경이 병목이 되고 있다.", "mvp":"Git 저장소의 플러그인 목록을 읽어 설치 명령과 승인 상태를 보여주는 웹 페이지.", "difficulty":"보통", "monetization":"조직별 SSO와 감사 로그를 유료 제공"},
+        {"title":"레포별 AI 작업 플러그인 추천기", "target_user":"새 코드베이스에서 에이전트를 쓰려는 개인 개발자", "what":"레포의 언어·파일·이슈 라벨을 읽고 테스트, 문서화, 보안 점검용 플러그인 조합을 제안한다.", "why_now":"공식 플러그인 생태계가 커져도 어떤 조합이 유용한지 판단하기 어렵다.", "mvp":"GitHub URL 하나를 입력받아 추천 3개와 설치 순서를 출력.", "difficulty":"쉬움", "monetization":"고급 규칙 세트와 팀 공유 컬렉션 판매"}
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "MadsLorentzen/ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "description_ko": "내 컴퓨터에서 구동하며 채용공고 평가, 이력서 맞춤화, 자기소개서와 면접 준비를 돕는 AI 구직 프레임워크.",
+      "language": "Python",
+      "stars": 50386,
+      "stars_today": 1365,
+      "topics": ["ai", "career", "cv", "interview-preparation", "job-search", "resume"],
+      "ideas": [
+        {"title":"지원 이력 기반 다음 공고 우선순위", "target_user":"여러 기업에 동시 지원하는 경력직 개발자", "what":"저장한 이력서와 지원 결과를 바탕으로 공고별 적합도, 준비 시간, 지원 마감 우선순위를 계산한다.", "why_now":"로컬 우선 구직 자동화 수요가 개인정보를 외부 SaaS에 맡기기 싫은 구직자와 맞닿는다.", "mvp":"CSV 공고와 PDF 이력서를 받아 상위 10개 지원 순서를 만드는 로컬 CLI.", "difficulty":"보통", "monetization":"개인 템플릿 팩과 코칭 리포트 유료화"},
+        {"title":"면접 회고를 다음 지원서에 반영하는 노트", "target_user":"면접을 반복하며 강점 설명을 다듬고 싶은 취업 준비생", "what":"면접 질문·답변·피드백을 구조화해 이후 자기소개서의 실제 사례 후보로 재사용하게 한다.", "why_now":"지원 자동화는 많지만, 면접에서 얻은 신호를 다음 지원에 연결하는 도구는 부족하다.", "mvp":"면접 메모를 입력하면 STAR 사례와 보완할 답변을 생성하는 로컬 마크다운 도구.", "difficulty":"쉬움", "monetization":"취업 스터디용 협업 보드 구독"}
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "description_ko": "여러 코딩 에이전트의 스킬, 메모리, 보안, 리서치 흐름을 최적화하는 에이전트 하니스 시스템.",
+      "language": "JavaScript",
+      "stars": 282500,
+      "stars_today": 1145,
+      "topics": ["ai-agents", "claude-code", "developer-tools", "llm", "mcp", "productivity"],
+      "ideas": [
+        {"title":"에이전트 작업 품질 회귀 대시보드", "target_user":"AI 코딩 에이전트를 CI에 연결한 스타트업", "what":"프롬프트·스킬 변경 뒤 동일한 이슈 세트에서 성공률, 비용, 수정 횟수를 비교한다.", "why_now":"에이전트 설정이 코드처럼 빠르게 바뀌지만 성능 저하를 발견할 관측 도구가 부족하다.", "mvp":"GitHub 이슈 10개와 실행 로그를 비교해 점수 변화를 보여주는 CLI 리포트.", "difficulty":"보통", "monetization":"팀별 벤치마크 저장과 알림 구독"},
+        {"title":"에이전트 권한 사전 점검 훅", "target_user":"개발자에게 셸·Git 권한을 부여하는 보안 담당자", "what":"에이전트가 실행하려는 명령을 위험도별로 분류하고 승인 규칙과 대체 명령을 제안한다.", "why_now":"자율 코딩 도구가 로컬 권한까지 쓰기 시작해 명령 수준의 안전장치가 필요해졌다.", "mvp":"pre-command 훅에서 위험 명령 20종을 탐지하는 오픈소스 패키지.", "difficulty":"보통", "monetization":"조직 정책 관리와 감사 로그 유료화"}
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "description_ko": "어떤 소프트웨어든 에이전트가 조작할 수 있는 CLI로 만들려는 프로젝트.",
+      "language": "Python",
+      "stars": 54054,
+      "stars_today": 574,
+      "topics": [],
+      "ideas": [
+        {"title":"사내 웹툴용 에이전트 CLI 래퍼 생성기", "target_user":"내부 운영 도구를 보유한 B2B SaaS 팀", "what":"OpenAPI와 화면 흐름을 입력하면 에이전트가 호출할 안전한 명령형 인터페이스 초안을 만든다.", "why_now":"GUI 전용 백오피스가 에이전트 자동화의 사각지대가 되고 있다.", "mvp":"OpenAPI 문서에서 read-only 명령과 도움말을 생성하는 Python CLI.", "difficulty":"보통", "monetization":"권한 매핑과 엔터프라이즈 커넥터 판매"},
+        {"title":"디자인 툴 반복 작업 레시피 마켓", "target_user":"반복 편집이 많은 1인 디자이너와 마케터", "what":"디자인·영상·문서 앱의 자주 쓰는 작업을 자연어 명령과 검증 단계가 있는 레시피로 공유한다.", "why_now":"앱을 CLI로 노출하는 흐름이 늘면서 비개발자도 에이전트 자동화를 재사용할 수 있다.", "mvp":"한 가지 데스크톱 앱의 파일 일괄 변환 레시피 10개를 실행하는 패키지.", "difficulty":"보통", "monetization":"프리미엄 앱별 레시피 번들 판매"}
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "description_ko": "생명과학·화학·의학·신약개발 데이터베이스를 활용하는 검증된 과학 에이전트 스킬 모음.",
+      "language": "Python",
+      "stars": 52242,
+      "stars_today": 878,
+      "topics": ["agent-skills", "ai-scientist", "bioinformatics", "clinical-research", "drug-discovery", "scientific-computing"],
+      "ideas": [
+        {"title":"논문 재현성 체크리스트 에이전트", "target_user":"대학원생과 연구실의 논문 읽기 모임", "what":"논문의 데이터·코드·실험 조건을 추출해 재현에 필요한 누락 항목과 실행 순서를 만든다.", "why_now":"과학 스킬과 공개 데이터 소스가 표준화되어 문헌 검토를 실제 실행 계획으로 바꾸기 쉬워졌다.", "mvp":"DOI와 PDF를 입력하면 재현 체크리스트를 마크다운으로 만드는 도구.", "difficulty":"보통", "monetization":"연구실 협업 공간과 프로젝트별 기록 보관 구독"},
+        {"title":"소규모 바이오랩용 실험 후보 비교기", "target_user":"외주 전 실험 우선순위를 정하는 초기 바이오 스타트업", "what":"공개 데이터베이스 근거를 모아 표적·화합물 후보의 근거 강도와 검증 비용을 한 화면에서 비교한다.", "why_now":"AI 과학 스킬이 전문 검색·분석 접근성을 낮추고 있다.", "mvp":"질병과 표적 3개를 입력해 공개 근거 링크와 비교표를 출력.", "difficulty":"어려움", "monetization":"팀 좌석제와 리포트 내보내기 유료화"}
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "akitaonrails/ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "description_ko": "코딩 CLI 에이전트의 장기 기억과 서로 다른 에이전트 간 작업 인계를 지원하는 솔루션.",
+      "language": "Rust",
+      "stars": 9914,
+      "stars_today": 178,
+      "topics": [],
+      "ideas": [
+        {"title":"프로젝트 전환 메모 자동 인계", "target_user":"Claude Code·Codex 등을 번갈아 쓰는 프리랜서 개발자", "what":"세션에서 결정한 사항, 막힌 지점, 다음 명령을 추출해 특정 벤더에 묶이지 않은 handoff 파일로 저장한다.", "why_now":"에이전트가 다양해지며 대화 맥락의 종속 비용이 실제 생산성 문제로 떠오르고 있다.", "mvp":"터미널 세션 종료 시 HANDOFF.md를 갱신하는 Rust 훅.", "difficulty":"보통", "monetization":"암호화 동기화와 팀 공유 기능 구독"},
+        {"title":"버그 수정 결정의 기억 검색", "target_user":"오래된 서비스의 온콜 엔지니어", "what":"과거 장애 대응에서 왜 특정 우회책을 택했는지 티켓·PR·런북 단위로 찾아 다음 에이전트 작업에 주입한다.", "why_now":"에이전트의 코딩 속도보다 조직의 암묵지 손실이 유지보수의 큰 비용이 되었다.", "mvp":"Git 커밋과 마크다운 런북을 색인해 자연어 질의에 관련 결정 5개를 반환.", "difficulty":"보통", "monetization":"사내 Git 연동과 접근 제어 유료화"}
+      ]
+    },
+    {
+      "rank": 7,
+      "name": "android/skills",
+      "url": "https://github.com/android/skills",
+      "description": "",
+      "description_ko": "Android 생태계에서 활용할 수 있는 에이전트 스킬 모음.",
+      "language": "Kotlin",
+      "stars": 8422,
+      "stars_today": 355,
+      "topics": ["skills"],
+      "ideas": [
+        {"title":"안드로이드 접근성 회귀 검사 스킬", "target_user":"작은 모바일 앱 팀의 Android 개발자", "what":"화면 캡처와 Compose 레이아웃 정보를 점검해 터치 영역, 대비, contentDescription 누락을 PR마다 요약한다.", "why_now":"플랫폼 공식 스킬 생태계가 에이전트 기반 모바일 QA의 신뢰도를 높이고 있다.", "mvp":"APK 하나를 받아 대표 화면의 접근성 위반을 CSV로 출력.", "difficulty":"보통", "monetization":"CI 실행량 기반 과금"},
+        {"title":"릴리스 노트용 스토어 문구 생성 워크플로", "target_user":"개발과 마케팅을 함께 맡는 인디 Android 개발자", "what":"커밋·이슈·스크린샷 변화에서 Google Play용 한국어·영어 릴리스 노트 초안을 생성한다.", "why_now":"기능 개발은 자동화되지만 스토어 등록 문구는 여전히 수작업으로 남는다.", "mvp":"최근 Git 태그 사이 커밋을 분류해 3가지 톤의 릴리스 노트를 출력.", "difficulty":"쉬움", "monetization":"다국어 현지화와 스토어 업로드 연동 유료화"}
+      ]
+    },
+    {
+      "rank": 8,
+      "name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "description_ko": "여러 코딩 에이전트를 데스크톱·모바일·원격 환경에서 운영하는 에이전트 플릿 작업 공간.",
+      "language": "TypeScript",
+      "stars": 95403,
+      "stars_today": 830,
+      "topics": ["agent-ide", "ai-agents", "mobile-app", "orchestration", "runtime", "worktrees"],
+      "ideas": [
+        {"title":"에이전트 병렬 작업 예산판", "target_user":"여러 에이전트에 이슈를 나눠 주는 테크 리드", "what":"작업별 예상 시간·토큰·충돌 가능성을 보여주고 어떤 작업을 병렬로 보낼지 추천한다.", "why_now":"에이전트 플릿은 가능해졌지만 병렬화의 비용과 코드 충돌을 관리하는 층이 약하다.", "mvp":"GitHub 이슈 목록에서 독립성 점수와 권장 워커 수를 계산하는 보드.", "difficulty":"보통", "monetization":"팀별 실행 기록과 최적화 추천 구독"},
+        {"title":"모바일 승인함을 가진 야간 코딩 에이전트", "target_user":"낮에는 회의가 많은 1인 창업자", "what":"밤에 에이전트가 작은 이슈를 처리하고, 위험한 변경만 모바일에서 diff·테스트 결과와 함께 승인받는다.", "why_now":"원격 런타임과 모바일 에이전트 제어가 보편화되어 비동기 개발 루프를 만들 수 있다.", "mvp":"라벨이 붙은 이슈를 작업하고 승인용 웹 링크를 보내는 GitHub Action.", "difficulty":"어려움", "monetization":"실행 슬롯과 승인 워크플로 구독"}
+      ]
+    },
+    {
+      "rank": 9,
+      "name": "anthropics/claude-code",
+      "url": "https://github.com/anthropics/claude-code",
+      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "description_ko": "터미널에서 코드베이스를 이해하고 일상 작업, 설명, Git 워크플로를 자연어로 처리하는 코딩 에이전트.",
+      "language": "TypeScript",
+      "stars": 151741,
+      "stars_today": 179,
+      "topics": [],
+      "ideas": [
+        {"title":"신규 입사자용 코드베이스 산책로", "target_user":"온보딩 중인 주니어 개발자와 멘토", "what":"자연어 질문에 따라 실제 파일·PR·테스트를 연결한 30분짜리 코드 투어를 매일 한 개씩 제공한다.", "why_now":"에이전트가 코드베이스 맥락을 읽을 수 있어 문서보다 최신인 온보딩 경로를 만들 수 있다.", "mvp":"레포를 분석해 핵심 도메인 흐름 3개와 읽을 파일 순서를 마크다운으로 생성.", "difficulty":"보통", "monetization":"조직별 온보딩 분석과 멘토 피드백 기능"},
+        {"title":"PR 설명의 근거 링크 자동 수집기", "target_user":"리뷰 품질을 높이고 싶은 오픈소스 메인테이너", "what":"변경된 코드가 영향을 주는 문서, 테스트, 과거 이슈를 PR 본문에 자동으로 연결한다.", "why_now":"코딩 에이전트가 변경을 만들수록 사람이 검토할 맥락을 짧게 전달하는 일이 중요해진다.", "mvp":"GitHub Action으로 diff를 읽어 관련 파일·테스트·이슈 링크를 PR 코멘트에 게시.", "difficulty":"쉬움", "monetization":"비공개 저장소 분석과 팀 정책 템플릿 판매"}
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "description_ko": "646개 언어에서 음성 복제, 더빙, 받아쓰기, 전사, 오디오북 제작을 로컬로 처리하는 오픈소스 음성 도구.",
+      "language": "Python",
+      "stars": 73347,
+      "stars_today": 2125,
+      "topics": ["audiobook", "dubbing", "local-first", "speech-to-text", "text-to-speech", "voice-cloning"],
+      "ideas": [
+        {"title":"개인 강의의 다국어 더빙 검수함", "target_user":"해외 수강생을 늘리고 싶은 1인 강사", "what":"강의 영상의 전사·번역·더빙을 만들고 고유명사와 숫자처럼 오류가 잦은 구간만 우선 검수하게 한다.", "why_now":"로컬 음성 모델의 품질과 언어 범위가 올라가며 소규모 제작자도 더빙을 시도할 수 있다.", "mvp":"5분 영상 하나를 받아 자막과 두 언어의 음성 트랙, 검수 타임라인을 생성.", "difficulty":"보통", "monetization":"렌더링 시간과 팀 검수 좌석제 과금"},
+        {"title":"개인정보 보존형 상담 기록 음성 노트", "target_user":"민감한 인터뷰를 진행하는 연구자와 상담 기관", "what":"녹음을 로컬에서 전사하고 화자별 핵심 주제와 후속 질문만 추출해 외부 서버 전송을 줄인다.", "why_now":"음성 AI 활용은 커지지만 민감한 녹음을 클라우드에 올리기 어려운 현장이 많다.", "mvp":"로컬 폴더의 음성을 전사하고 암호화된 회의 요약 파일을 만드는 데스크톱 앱.", "difficulty":"보통", "monetization":"기관용 배포·키 관리 지원"}
+      ]
+    },
+    {
+      "rank": 11,
+      "name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "description": "The open source coding agent.",
+      "description_ko": "오픈소스 코딩 에이전트.",
+      "language": "TypeScript",
+      "stars": 215308,
+      "stars_today": 438,
+      "topics": [],
+      "ideas": [
+        {"title":"고객사별 코딩 에이전트 실행 기록 보관함", "target_user":"여러 고객 레포를 관리하는 소프트웨어 에이전시", "what":"에이전트가 만든 변경, 사용한 지시, 사람의 수정 사항을 고객·프로젝트별로 검색 가능하게 보관한다.", "why_now":"오픈소스 에이전트 채택으로 실행 제어는 쉬워졌지만 납품 책임을 위한 기록은 분산돼 있다.", "mvp":"로컬 세션 로그와 Git diff를 프로젝트별 타임라인으로 만드는 CLI.", "difficulty":"보통", "monetization":"고객 포털과 장기 보관 스토리지 구독"},
+        {"title":"오픈소스 이슈 첫 대응 코파일럿", "target_user":"이슈가 많은 소규모 오픈소스 유지관리자", "what":"새 이슈를 재현 가능성, 중복, 필요한 로그 기준으로 분류하고 친절한 첫 답변 초안을 낸다.", "why_now":"오픈소스 코딩 에이전트를 업무 자동화가 아닌 커뮤니티 운영에 적용할 여지가 크다.", "mvp":"GitHub webhook으로 들어온 이슈에 라벨 추천과 질문 3개를 드래프트 코멘트로 생성.", "difficulty":"쉬움", "monetization":"대형 커뮤니티용 SLA·분석 대시보드"}
+      ]
+    },
+    {
+      "rank": 12,
+      "name": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "description_ko": "다중 에이전트 스웜과 자율 워크플로, 적응형 메모리, RAG를 조율하는 에이전트 하니스.",
+      "language": "TypeScript",
+      "stars": 76061,
+      "stars_today": 420,
+      "topics": ["agentic-workflow", "agents", "multi-agent", "mcp-server", "skills", "swarm"],
+      "ideas": [
+        {"title":"지역 상권 리서치 스웜", "target_user":"새 상권 진입을 검토하는 소상공인 컨설턴트", "what":"지도, 리뷰, 공공 데이터, 경쟁사 메뉴를 역할별 에이전트가 조사하고 근거가 달린 입지 메모를 합친다.", "why_now":"다중 에이전트 조율이 웹 조사처럼 병렬성이 큰 분석 업무에 실용적이 되었다.", "mvp":"상호·동네를 입력하면 경쟁 매장 10곳과 가격대, 빈틈 가설을 모은 PDF 리포트.", "difficulty":"보통", "monetization":"리포트 건당 과금과 컨설턴트 좌석제"},
+        {"title":"고객 인터뷰 인사이트 반대검증 봇", "target_user":"PMF를 탐색하는 초기 스타트업 PM", "what":"한 에이전트는 인터뷰에서 기회를 요약하고 다른 에이전트는 반례와 표본 편향을 찾아 결론의 신뢰도를 표시한다.", "why_now":"스웜 구조가 한 모델의 그럴듯한 요약을 교차 검토하는 저비용 방법이 된다.", "mvp":"인터뷰 전사 5개를 넣어 가설, 인용 근거, 반증 질문을 출력.", "difficulty":"보통", "monetization":"리서치 저장소와 팀 공유 구독"}
+      ]
+    },
+    {
+      "rank": 13,
+      "name": "xerj-org/xerj",
+      "url": "https://github.com/xerj-org/xerj",
+      "description": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep (1974 tool). One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. It’s durable and can replace ElasticSearch saving you x10 infra costs.",
+      "description_ko": "코드·문서·로그·PDF를 자동 색인해 검색, RAG, 보안 감사, 에이전트 메모리에 활용하는 AI 검색 도구.",
+      "language": "Rust",
+      "stars": 7790,
+      "stars_today": 1160,
+      "topics": ["hybrid-search", "semantic-search", "search-api", "search-engine", "vector-search"],
+      "ideas": [
+        {"title":"감사 대응 증거 검색함", "target_user":"ISO·보안 감사를 준비하는 20~200명 규모 SaaS 팀", "what":"정책 문서, 변경 로그, 티켓, 접근 기록을 색인해 감사 질문에 근거 문서와 최신성을 함께 반환한다.", "why_now":"에이전트용 저비용 자동 색인이 늘어난 컴플라이언스 자료를 검색 가능한 증거로 바꿀 수 있다.", "mvp":"로컬 폴더의 PDF·마크다운·CSV를 색인해 감사 질문 20개에 답하는 CLI.", "difficulty":"보통", "monetization":"권한 필터와 증거 내보내기 유료화"},
+        {"title":"고객 장애 티켓-로그 연결 검색", "target_user":"B2B SaaS의 지원 엔지니어", "what":"고객 티켓 문장으로 관련 배포, 에러 로그, 과거 해결책을 찾아 첫 응답과 조사 링크를 제시한다.", "why_now":"로그와 문서가 늘어나는 속도에 비해 grep 중심의 장애 조사는 더 이상 확장되지 않는다.", "mvp":"샘플 로그와 티켓 CSV를 색인해 유사 장애 3건과 확인 명령을 반환.", "difficulty":"보통", "monetization":"데이터 소스 커넥터와 좌석 기반 과금"}
+      ]
+    }
+  ]
 }

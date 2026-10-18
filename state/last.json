@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "date": "2026-10-11",
-  "captured_at": "2026-10-11T08:10:14+0900",
+  "date": "2026-10-18",
+  "captured_at": "2026-10-18T09:32:10+0900",
   "repos": [
-    "morluto/rea",
-    "boykopovar/anyps5",
-    "storytold/artcraft",
-    "cathrynlavery/diagram-design",
-    "mksglu/context-mode",
-    "mattpocock/skills",
-    "flutter/flutter",
-    "tensorflow/tensorflow",
-    "hugohe3/ppt-master",
-    "pytorch/pytorch",
-    "huggingface/transformers",
-    "anthropics/knowledge-work-plugins",
-    "multica-ai/andrej-karpathy-skills"
+    "anthropics/claude-plugins-official",
+    "madslorentzen/ai-job-search",
+    "affaan-m/ecc",
+    "hkuds/cli-anything",
+    "k-dense-ai/scientific-agent-skills",
+    "akitaonrails/ai-memory",
+    "android/skills",
+    "stablyai/orca",
+    "anthropics/claude-code",
+    "debpalash/voicestudio",
+    "anomalyco/opencode",
+    "ruvnet/ruflo",
+    "xerj-org/xerj"
   ]
 }
