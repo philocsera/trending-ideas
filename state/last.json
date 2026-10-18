@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "date": "2026-10-18",
-  "captured_at": "2026-10-18T09:32:10+0900",
+  "date": "2026-10-19",
+  "captured_at": "2026-10-19T07:00:17+0900",
   "repos": [
-    "anthropics/claude-plugins-official",
     "madslorentzen/ai-job-search",
-    "affaan-m/ecc",
-    "hkuds/cli-anything",
-    "k-dense-ai/scientific-agent-skills",
-    "akitaonrails/ai-memory",
-    "android/skills",
-    "stablyai/orca",
-    "anthropics/claude-code",
-    "debpalash/voicestudio",
+    "anthropics/claude-plugins-official",
     "anomalyco/opencode",
+    "cursor/plugins",
     "ruvnet/ruflo",
-    "xerj-org/xerj"
+    "akitaonrails/ai-memory",
+    "stablyai/orca",
+    "hkuds/cli-anything",
+    "debpalash/voicestudio",
+    "android/skills",
+    "mlabonne/llm-course",
+    "kruk2/jasna",
+    "comfy-org/comfyui"
   ]
 }
