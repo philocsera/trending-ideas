@@ -1,70 +1,9 @@
 {
-  "date": "2026-10-19",
-  "generated_at": "2026-10-19T07:00:17+0900",
+  "date": "2026-10-20",
+  "generated_at": "2026-10-20T08:06:17+09:00",
   "source": "github.com/trending?since=daily",
   "is_baseline": false,
-  "trending_count": 13,
-  "new_count": 4,
-  "new_repos": [
-    {
-      "rank": 4,
-      "name": "cursor/plugins",
-      "url": "https://github.com/cursor/plugins",
-      "description": "Cursor plugin specification and official plugins",
-      "description_ko": "Cursor용 플러그인 명세와 공식 플러그인 모음.",
-      "language": "TypeScript",
-      "stars": 12705,
-      "stars_today": 351,
-      "topics": [],
-      "ideas": [
-        {"title":"팀별 에이전트 작업 레시피 카탈로그", "target_user":"반복적인 개발·운영 업무를 에이전트에 맡기는 소프트웨어 팀", "what":"검증된 작업 지침, 필요한 권한, 실행 전후 체크를 플러그인 단위로 등록하고 팀별로 배포한다.", "why_now":"공식 플러그인 마켓이 빠르게 커지면서 팀에 맞는 안전한 조합을 재사용할 운영층이 필요하다.", "mvp":"YAML 레시피 10개를 검색·설치하고 실행 체크리스트를 보여주는 CLI.", "difficulty":"보통", "monetization":"SSO, 승인 워크플로, 사설 레지스트리를 유료 제공"},
-        {"title":"에이전트 플러그인 호환성 검사기", "target_user":"여러 AI 코딩 도구를 병행하는 개발자 경험 플랫폼 팀", "what":"저장소 설정과 플러그인 매니페스트를 비교해 중복 명령, 누락된 권한, 지원되지 않는 도구를 찾아준다.", "why_now":"에이전트별 플러그인 형식은 늘고 있어 설치 성공보다 재현 가능한 팀 환경이 중요해졌다.", "mvp":"레포 URL을 넣으면 지원 도구와 충돌 가능성을 리포트하는 GitHub Action.", "difficulty":"쉬움", "monetization":"조직 정책 템플릿과 CI 대시보드 구독"}
-      ]
-    },
-    {
-      "rank": 11,
-      "name": "mlabonne/llm-course",
-      "url": "https://github.com/mlabonne/llm-course",
-      "description": "Course to get into Large Language Models (LLMs) with roadmaps and Colab notebooks.",
-      "description_ko": "로드맵과 Colab 노트북으로 LLM 학습을 돕는 강좌.",
-      "language": null,
-      "stars": 83983,
-      "stars_today": 81,
-      "topics": ["course", "large-language-models", "llm", "machine-learning", "roadmap"],
-      "ideas": [
-        {"title":"업무 목표 역산형 LLM 학습 플래너", "target_user":"3개월 안에 LLM 기능을 출시해야 하는 주니어 개발자", "what":"목표 기능과 현재 기술을 입력하면 이론, 노트북 실습, 배포 과제를 주 단위로 연결한 개인 학습 경로를 만든다.", "why_now":"공개 LLM 자료는 넘치지만 실무 결과물까지 이어지는 순서 설계는 여전히 학습자 몫이다.", "mvp":"목표 직무와 주당 시간을 받아 4주짜리 마크다운 커리큘럼을 출력.", "difficulty":"쉬움", "monetization":"직무별 프로젝트 템플릿과 멘토 피드백 팩 판매"},
-        {"title":"사내 LLM 실험 재현 노트", "target_user":"작은 AI 팀의 엔지니어와 PM", "what":"Colab·로컬 노트북에서 쓴 모델, 데이터, 프롬프트, 비용을 실험 카드로 남기고 결과를 비교한다.", "why_now":"교육용 노트북을 실제 제품 실험으로 옮길 때 재현성과 의사결정 기록이 빠르게 사라진다.", "mvp":"노트북 메타데이터와 결과 CSV를 읽어 실험 비교표를 만드는 오픈소스 도구.", "difficulty":"보통", "monetization":"팀 공유, 권한 관리, 클라우드 실행 이력 구독"}
-      ]
-    },
-    {
-      "rank": 12,
-      "name": "Kruk2/jasna",
-      "url": "https://github.com/Kruk2/jasna",
-      "description": "Video restoration tool",
-      "description_ko": "영상과 이미지의 모자이크 영역을 복원하는 GPU 기반 도구.",
-      "language": "Python",
-      "stars": 2362,
-      "stars_today": 115,
-      "topics": [],
-      "ideas": [
-        {"title":"촬영본 품질 점검 큐", "target_user":"행사·인터뷰 영상을 납품하는 1인 영상 제작자", "what":"영상 폴더를 스캔해 얼굴 흐림, 압축 손상, 모자이크 구간을 후보로 표시하고 복원 전후를 비교하게 한다.", "why_now":"로컬 GPU 복원 기술이 발전해 클라우드 업로드 없이도 납품 전 품질 검수가 가능해졌다.", "mvp":"짧은 영상에서 손상 의심 구간의 썸네일과 타임코드를 만드는 데스크톱 앱.", "difficulty":"보통", "monetization":"GPU 처리량 기반의 프로 기능과 팀 검수 좌석제"},
-        {"title":"개인정보 가림·복원 작업 기록기", "target_user":"영상 증거를 다루는 조사·아카이브 팀", "what":"가림 영역, 복원 목적, 원본 해시, 검토자를 작업 단위로 남겨 민감 영상의 처리 이력을 관리한다.", "why_now":"영상 복원은 쉬워지지만 어떤 부분을 누가 어떤 근거로 처리했는지 남기는 절차가 중요해지고 있다.", "mvp":"로컬 영상과 영역 주석을 받아 변경 이력 JSON과 비교 프리뷰를 생성.", "difficulty":"보통", "monetization":"감사 로그와 암호화 보관 기능 유료화"}
-      ]
-    },
-    {
-      "rank": 13,
-      "name": "Comfy-Org/ComfyUI",
-      "url": "https://github.com/Comfy-Org/ComfyUI",
-      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
-      "description_ko": "노드 그래프로 이미지·영상·오디오 생성 워크플로를 구성하는 모듈형 로컬 AI 제작 엔진.",
-      "language": "Python",
-      "stars": 138557,
-      "stars_today": 155,
-      "topics": ["ai", "comfy", "comfyui", "python", "pytorch", "stable-diffusion"],
-      "ideas": [
-        {"title":"브랜드별 콘텐츠 워크플로 템플릿", "target_user":"제품 사진과 SNS 영상을 혼자 만드는 소상공인", "what":"브랜드 색상·상품 사진·금지 표현을 저장하고, 목적별 생성 워크플로를 한 번의 폼 입력으로 실행한다.", "why_now":"강력한 노드 기반 생성 도구는 늘었지만 비전문가에게는 워크플로 조립 자체가 진입장벽이다.", "mvp":"상품 사진 1장으로 정사각형 광고 이미지 3종을 만드는 고정 워크플로와 간단한 웹 폼.", "difficulty":"보통", "monetization":"업종별 템플릿 번들과 클라우드 렌더링 크레딧"},
-        {"title":"생성 워크플로 회귀 테스트", "target_user":"ComfyUI를 제작 파이프라인에 넣은 디자인 엔지니어", "what":"모델·노드 업데이트 뒤 같은 시드와 입력으로 결과의 품질, 시간, VRAM 사용량 변화를 비교해 배포 위험을 알려준다.", "why_now":"로컬 생성 모델과 커스텀 노드의 업데이트 속도가 빨라 프로덕션 결과의 일관성 검증이 필요하다.", "mvp":"워크플로 JSON과 기준 이미지 세트를 받아 렌더 시간·이미지 유사도 리포트를 출력.", "difficulty":"어려움", "monetization":"CI 연동과 팀별 기준선 저장을 구독형으로 제공"}
-      ]
-    }
-  ]
+  "trending_count": 0,
+  "new_count": 0,
+  "new_repos": []
 }
