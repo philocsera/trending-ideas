@@ -1,9 +1,512 @@
 {
-  "date": "2026-10-20",
-  "generated_at": "2026-10-20T08:06:17+09:00",
+  "date": "2026-11-18",
+  "generated_at": "2026-11-18T08:09:01+09:00",
   "source": "github.com/trending?since=daily",
   "is_baseline": false,
-  "trending_count": 0,
-  "new_count": 0,
-  "new_repos": []
+  "trending_count": 15,
+  "new_count": 14,
+  "new_repos": [
+    {
+      "rank": 1,
+      "name": "elementalsouls/Claude-BugHunter",
+      "url": "https://github.com/elementalsouls/Claude-BugHunter",
+      "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+      "description_ko": "버그 헌팅과 외부 레드팀 작업을 위한 Claude Code 스킬 번들입니다.",
+      "language": "Python",
+      "stars": 9162,
+      "stars_today": 1007,
+      "topics": [
+        "ai-security",
+        "bug-bounty",
+        "claude-code",
+        "red-team",
+        "security-tools"
+      ],
+      "ideas": [
+        {
+          "title": "취약점 재현 노트 자동완성기",
+          "target_user": "버그바운티를 처음 하는 개발자",
+          "what": "URL·요청/응답·스크린샷을 입력하면 재현 절차, 영향도, 수정 권고를 표준 보고서로 정리하는 로컬 도구입니다.",
+          "why_now": "공개 취약점 패턴과 AI 코딩 스킬이 풍부해져 입문자가 보고서 품질을 올릴 수 있습니다.",
+          "mvp": "XSS·IDOR·SQLi 세 유형의 체크리스트와 Markdown 보고서 생성",
+          "difficulty": "보통",
+          "monetization": "팀용 템플릿·공유 워크스페이스 구독"
+        },
+        {
+          "title": "PR 보안 시나리오 카드",
+          "target_user": "보안 전담 인력이 없는 스타트업 개발팀",
+          "what": "변경된 파일과 인증 흐름을 바탕으로 PR마다 점검할 공격 시나리오 카드를 제시합니다.",
+          "why_now": "레드팀 지식을 코드 리뷰의 짧은 루틴으로 옮길 수 있는 수요가 큽니다.",
+          "mvp": "GitHub diff 입력 후 OWASP 기반 카드 5개 출력",
+          "difficulty": "보통",
+          "monetization": "월간 리포트와 정책팩 유료화"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "description_ko": "여러 소셜·커뮤니티와 웹을 조사해 근거 기반 요약을 만드는 AI 에이전트 스킬입니다.",
+      "language": "Python",
+      "stars": 68996,
+      "stars_today": 772,
+      "topics": [
+        "deep-research",
+        "recency",
+        "reddit",
+        "trends",
+        "web-search",
+        "youtube"
+      ],
+      "ideas": [
+        {
+          "title": "신규 기능 반응 레이더",
+          "target_user": "인디 SaaS 운영자",
+          "what": "제품명과 기능을 등록하면 최근 30일 커뮤니티 반응을 긍정·불만·요청으로 묶어 매주 전달합니다.",
+          "why_now": "채널이 분산된 시대에 최신 반응을 근거와 함께 모으는 일이 차별화됩니다.",
+          "mvp": "Reddit·Hacker News·YouTube 세 소스의 링크 포함 주간 메일",
+          "difficulty": "보통",
+          "monetization": "추적 키워드 수 기준 구독"
+        },
+        {
+          "title": "근거 링크형 트렌드 브리프",
+          "target_user": "콘텐츠 기획자와 리서처",
+          "what": "주제를 입력하면 주장마다 원문 링크와 날짜를 붙인 1페이지 브리프를 생성합니다.",
+          "why_now": "AI 요약의 신뢰성 문제를 출처와 최신성으로 해결할 수 있습니다.",
+          "mvp": "한 주제, 10개 링크, 3개 핵심 변화 출력",
+          "difficulty": "쉬움",
+          "monetization": "팀 공유·PDF 내보내기 유료화"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "description_ko": "규칙 파이프라인과 LLM 에이전트를 결합한 다국어 코드 리뷰 도구입니다.",
+      "language": "Go",
+      "stars": 53694,
+      "stars_today": 764,
+      "topics": [
+        "agent",
+        "code-review",
+        "code-review-assistant",
+        "repository-level-context"
+      ],
+      "ideas": [
+        {
+          "title": "한국어 리뷰 코치",
+          "target_user": "주니어 개발자를 멘토링하는 팀 리드",
+          "what": "PR의 문제를 단순 지적 대신 왜 위험한지와 수정 전후 예시를 한국어로 설명하는 리뷰 봇입니다.",
+          "why_now": "결정적 정적 규칙과 LLM 설명을 함께 써야 오탐과 학습 비용을 낮출 수 있습니다.",
+          "mvp": "JavaScript의 null·XSS 규칙 10개와 GitHub PR 댓글",
+          "difficulty": "보통",
+          "monetization": "조직별 규칙팩과 좌석 과금"
+        },
+        {
+          "title": "배포 전 위험도 게이트",
+          "target_user": "소규모 B2B SaaS의 릴리스 담당자",
+          "what": "변경 코드에서 인증·결제·DB 접근을 찾아 위험 점수와 필수 승인자를 제안합니다.",
+          "why_now": "AI 리뷰가 라인 단위 경고를 넘어 배포 의사결정에 쓰이기 시작했습니다.",
+          "mvp": "Git diff와 폴더 규칙으로 위험도 3단계 산정",
+          "difficulty": "어려움",
+          "monetization": "CI 연동 월 구독"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "Tencent/LoopForge",
+      "url": "https://github.com/Tencent/LoopForge",
+      "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+      "description_ko": "코딩 에이전트와 사람 승인 단계를 조율하는 자체 호스팅 워크플로 도구입니다.",
+      "language": "Go",
+      "stars": 3087,
+      "stars_today": 590,
+      "topics": [
+        "agent-orchestration",
+        "ai-coding",
+        "human-on-the-loop",
+        "self-hosted",
+        "workflow-automation"
+      ],
+      "ideas": [
+        {
+          "title": "에이전트 작업 인수인계 보드",
+          "target_user": "여러 AI 코딩 도구를 쓰는 3~10명 개발팀",
+          "what": "에이전트 작업을 설계·구현·검증·사람 승인 단계로 보여주고 중단 지점을 명확히 기록합니다.",
+          "why_now": "여러 코딩 에이전트를 섞어 쓰면서 책임과 승인 흐름이 새 병목이 됐습니다.",
+          "mvp": "GitHub 이슈 하나를 4단계 칸반과 승인 버튼으로 표시",
+          "difficulty": "보통",
+          "monetization": "팀 워크플로 템플릿 구독"
+        },
+        {
+          "title": "안전한 야간 수정 큐",
+          "target_user": "퇴근 후 반복 유지보수를 자동화하려는 개발자",
+          "what": "의존성 갱신·문서 수정 같은 저위험 작업만 야간 에이전트 큐에 넣고 아침에 diff를 검토하게 합니다.",
+          "why_now": "사람 승인 게이트가 있어 자동화의 불안감을 줄일 수 있습니다.",
+          "mvp": "허용 레이블 이슈를 순차 실행하고 PR 초안 생성",
+          "difficulty": "보통",
+          "monetization": "실행 횟수 기반 과금"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "name": "dream-num/univer",
+      "url": "https://github.com/dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+      "description_ko": "편집·계산·협업·파일 처리를 제품에 넣을 수 있는 오픈소스 오피스 SDK입니다.",
+      "language": "TypeScript",
+      "stars": 28878,
+      "stars_today": 1776,
+      "topics": [
+        "collaboration",
+        "office",
+        "spreadsheet",
+        "wordprocessor",
+        "xlsx"
+      ],
+      "ideas": [
+        {
+          "title": "견적서에서 실행계획으로",
+          "target_user": "소규모 에이전시 운영자",
+          "what": "받은 견적 스프레드시트를 읽어 작업 항목·담당자·마감일이 연결된 협업 문서로 바꿉니다.",
+          "why_now": "AI가 표와 문서를 직접 다루는 제품 경험이 실용화되고 있습니다.",
+          "mvp": "xlsx 업로드 후 일정표와 담당자 체크박스가 있는 문서 생성",
+          "difficulty": "보통",
+          "monetization": "프로젝트당 내보내기·브랜딩 유료화"
+        },
+        {
+          "title": "교사용 피드백 시트",
+          "target_user": "학원·부트캠프 강사",
+          "what": "제출물 점수표에서 수강생별 피드백 초안을 만들고 공동 편집으로 다듬는 서비스입니다.",
+          "why_now": "스프레드시트의 익숙함을 유지하면서 AI 보조를 붙일 수 있습니다.",
+          "mvp": "CSV 점수 입력과 3문장 피드백 생성",
+          "difficulty": "쉬움",
+          "monetization": "수강생 수 기준 월 구독"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "name": "getarcaneapp/arcane",
+      "url": "https://github.com/getarcaneapp/arcane",
+      "description": "Modern Docker Management, Designed for Everyone",
+      "description_ko": "누구나 쉽게 쓰도록 설계한 현대적인 Docker 관리 도구입니다.",
+      "language": "Go",
+      "stars": 9295,
+      "stars_today": 654,
+      "topics": [
+        "container-management",
+        "docker",
+        "docker-compose",
+        "self-hosted",
+        "web-ui"
+      ],
+      "ideas": [
+        {
+          "title": "개발 PC 컨테이너 건강검진",
+          "target_user": "Docker를 쓰지만 운영 경험이 적은 프론트엔드 개발자",
+          "what": "로컬 Compose 프로젝트를 스캔해 죽은 컨테이너·포트 충돌·과도한 이미지 용량을 쉬운 언어로 알려줍니다.",
+          "why_now": "개발 환경이 컨테이너 중심이지만 작은 문제는 여전히 터미널 지식에 의존합니다.",
+          "mvp": "docker compose ps와 이미지 용량을 웹 대시보드에 표시",
+          "difficulty": "쉬움",
+          "monetization": "팀 환경 점검 리포트 유료화"
+        },
+        {
+          "title": "데모 환경 한 번에 켜기",
+          "target_user": "고객 데모를 자주 하는 B2B 스타트업",
+          "what": "서비스별 Compose 묶음을 선택하면 상태 확인과 데모 데이터 초기화까지 실행하는 내부 런처입니다.",
+          "why_now": "셀프호스팅 관리 UI가 간단한 운영 자동화의 기반이 됩니다.",
+          "mvp": "세 개 Compose 스택의 시작·중지·로그 보기",
+          "difficulty": "보통",
+          "monetization": "내부 도구 컨설팅·호스팅"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "name": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "description_ko": "여러 코딩 에이전트와 호환되는 Stitch MCP용 Agent Skills 라이브러리입니다.",
+      "language": "TypeScript",
+      "stars": 10077,
+      "stars_today": 350,
+      "topics": [],
+      "ideas": [
+        {
+          "title": "사내 디자인 규칙 스킬팩",
+          "target_user": "디자인 시스템을 운영하는 프론트엔드 팀",
+          "what": "Figma 토큰과 컴포넌트 규칙을 에이전트 스킬로 포장해 생성 UI가 팀 표준을 따르게 합니다.",
+          "why_now": "스킬 표준이 생기며 특정 에이전트에 묶이지 않는 업무 지식 배포가 가능해졌습니다.",
+          "mvp": "색상·간격·버튼 규칙을 검사하는 스킬 3개",
+          "difficulty": "보통",
+          "monetization": "기업용 스킬 레지스트리 구독"
+        },
+        {
+          "title": "작업별 에이전트 온보딩 키트",
+          "target_user": "AI 코딩 도입을 시작한 스타트업",
+          "what": "배포·장애 대응·문서화 같은 업무별 스킬을 골라 설치하고 사용 예시까지 제공하는 카탈로그입니다.",
+          "why_now": "도구 선택보다 반복 업무를 잘 정의한 스킬이 생산성을 좌우합니다.",
+          "mvp": "오픈소스 스킬 20개 검색·설치 가이드",
+          "difficulty": "쉬움",
+          "monetization": "검증 스킬팩 판매"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "name": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "description_ko": "에이전트 스킬 프레임워크와 소프트웨어 개발 방법론입니다.",
+      "language": "Shell",
+      "stars": 319292,
+      "stars_today": 598,
+      "topics": [
+        "brainstorming",
+        "coding",
+        "sdlc",
+        "skills",
+        "subagent-driven-development"
+      ],
+      "ideas": [
+        {
+          "title": "PR 전 개발 루틴 체크리스트",
+          "target_user": "AI로 코드를 빠르게 만드는 솔로 개발자",
+          "what": "요구사항 확인·테스트 작성·리뷰 요청 등 작업 단계별 누락을 점검하는 개인용 CLI입니다.",
+          "why_now": "에이전트가 코드를 빨리 만들수록 개발 절차의 품질 관리가 더 중요해졌습니다.",
+          "mvp": "명령 하나로 현재 브랜치의 테스트·문서·diff 체크",
+          "difficulty": "쉬움",
+          "monetization": "팀 정책 템플릿과 분석 대시보드"
+        },
+        {
+          "title": "에이전트 회고 로그",
+          "target_user": "반복적으로 AI 코딩 작업을 맡기는 팀",
+          "what": "작업마다 잘 된 지시·실패 원인·재사용할 스킬을 기록해 다음 작업의 프롬프트를 개선합니다.",
+          "why_now": "에이전트 성과를 감이 아니라 누적된 작업 증거로 개선할 필요가 있습니다.",
+          "mvp": "작업 종료 폼과 태그 검색",
+          "difficulty": "쉬움",
+          "monetization": "팀 지식베이스 연동 유료화"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "name": "ag-ui-protocol/ag-ui",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "description_ko": "에이전트를 프론트엔드 애플리케이션에 연결하기 위한 Agent-User Interaction Protocol입니다.",
+      "language": "TypeScript",
+      "stars": 19971,
+      "stars_today": 1444,
+      "topics": [
+        "agent-frontend",
+        "agent-ui",
+        "agentic-workflow",
+        "ai-agents"
+      ],
+      "ideas": [
+        {
+          "title": "승인 가능한 AI 작성 화면",
+          "target_user": "고객 문서를 AI로 작성하는 SaaS 팀",
+          "what": "에이전트의 계획·진행 중 도구 호출·최종 변경안을 한 화면에 보여주고 각 단계에서 승인받습니다.",
+          "why_now": "사용자가 에이전트 행동을 관찰하고 개입하는 UI가 제품 신뢰의 핵심이 됐습니다.",
+          "mvp": "문서 초안 생성의 계획·스트리밍·승인 버튼",
+          "difficulty": "보통",
+          "monetization": "에이전트 UI 컴포넌트 라이선스"
+        },
+        {
+          "title": "상담원 보조 타임라인",
+          "target_user": "소규모 고객지원 팀",
+          "what": "AI가 답변을 찾는 과정과 참조 문서를 타임라인으로 보여주며 상담원이 즉시 수정해 보낼 수 있게 합니다.",
+          "why_now": "에이전트와 사용자 간 상호작용 표준이 상담 도구의 투명성을 높입니다.",
+          "mvp": "FAQ 검색 단계와 답변 초안을 실시간 표시",
+          "difficulty": "보통",
+          "monetization": "상담 좌석당 구독"
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "name": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "description_ko": "에이전트 계획을 만들고 주석·리뷰·피드백을 한 번에 전달하는 협업 워크스페이스입니다.",
+      "language": "TypeScript",
+      "stars": 13048,
+      "stars_today": 691,
+      "topics": [
+        "agents",
+        "code-review",
+        "plan-mode",
+        "skills"
+      ],
+      "ideas": [
+        {
+          "title": "기획자용 에이전트 브리핑룸",
+          "target_user": "개발자가 아닌 PM·운영 담당자",
+          "what": "AI 작업 계획을 카드로 검토하고 문장 단위 코멘트를 남겨 개발 에이전트에 전달하는 공간입니다.",
+          "why_now": "코드를 몰라도 계획과 산출물에 개입할 수 있는 협업 경험의 수요가 큽니다.",
+          "mvp": "Markdown 계획에 댓글을 달고 수정 지시로 내보내기",
+          "difficulty": "쉬움",
+          "monetization": "협업 인원 기준 구독"
+        },
+        {
+          "title": "디자인 QA 주석 릴레이",
+          "target_user": "디자이너와 프론트엔드 개발자",
+          "what": "스테이징 화면 캡처에 핀을 꽂아 수정 지시를 만들고 에이전트 작업 큐로 전송합니다.",
+          "why_now": "주석과 실행을 연결하면 반복되는 QA 핑퐁을 줄일 수 있습니다.",
+          "mvp": "이미지 업로드·핀 댓글·GitHub 이슈 생성",
+          "difficulty": "보통",
+          "monetization": "프로젝트별 구독"
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "name": "sveltejs/svelte",
+      "url": "https://github.com/sveltejs/svelte",
+      "description": "web development for the rest of us",
+      "description_ko": "더 많은 사람이 웹 개발을 쉽게 할 수 있게 하는 프론트엔드 프레임워크입니다.",
+      "language": "JavaScript",
+      "stars": 89572,
+      "stars_today": 533,
+      "topics": [
+        "compiler",
+        "template",
+        "ui"
+      ],
+      "ideas": [
+        {
+          "title": "지역 상점용 한 페이지 예약 사이트",
+          "target_user": "웹사이트가 없는 1인 사업자",
+          "what": "업종과 영업시간만 입력하면 메뉴·예약·문의가 담긴 빠른 단일 페이지를 생성합니다.",
+          "why_now": "가벼운 컴파일 기반 UI는 저사양 호스팅에서도 빠른 고객 경험을 제공합니다.",
+          "mvp": "카페·미용실 템플릿 3종과 예약 링크",
+          "difficulty": "쉬움",
+          "monetization": "도메인 연결과 고급 템플릿 월 구독"
+        },
+        {
+          "title": "업무용 미니 대시보드 빌더",
+          "target_user": "스프레드시트로 운영하는 소규모 팀",
+          "what": "CSV를 올리면 지표 카드와 필터가 있는 읽기 전용 대시보드를 즉시 만듭니다.",
+          "why_now": "복잡한 BI 대신 빠르고 작은 내부 도구를 원하는 팀이 많습니다.",
+          "mvp": "CSV 업로드, 차트 3종, 링크 공유",
+          "difficulty": "보통",
+          "monetization": "비공개 대시보드·자동 갱신 유료화"
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "description_ko": "여러 코딩 에이전트의 스킬·메모리·보안·조사 중심 개발을 최적화하는 시스템입니다.",
+      "language": "JavaScript",
+      "stars": 305454,
+      "stars_today": 902,
+      "topics": [
+        "ai-agents",
+        "developer-tools",
+        "llm",
+        "mcp",
+        "productivity"
+      ],
+      "ideas": [
+        {
+          "title": "프롬프트 회귀 테스트",
+          "target_user": "사내 AI 개발 도구를 운영하는 엔지니어",
+          "what": "대표 작업 20개를 고정해 에이전트 설정이나 스킬 변경 뒤 결과 품질·비용·시간을 비교합니다.",
+          "why_now": "에이전트 설정이 코드처럼 빠르게 변해 성능 회귀를 측정할 장치가 필요합니다.",
+          "mvp": "JSON 작업 세트와 수동 점수 비교 리포트",
+          "difficulty": "보통",
+          "monetization": "팀 대시보드와 실행 기록 저장 구독"
+        },
+        {
+          "title": "코딩 에이전트 보안 프로필",
+          "target_user": "AI 도구 도입 전 보안 검토를 하는 IT 관리자",
+          "what": "에이전트별 파일 접근·네트워크·비밀값 정책을 질문지와 권장 설정으로 정리합니다.",
+          "why_now": "생산성 도구의 권한이 커지면서 설정 표준화가 필수입니다.",
+          "mvp": "에이전트 4종 보안 체크리스트와 정책 Markdown 생성",
+          "difficulty": "쉬움",
+          "monetization": "감사 리포트·SSO 정책 유료화"
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "name": "jingyaogong/minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+      "description_ko": "약 2시간 만에 6,400만 파라미터 LLM을 처음부터 학습하는 교육용 프로젝트입니다.",
+      "language": "Python",
+      "stars": 65918,
+      "stars_today": 188,
+      "topics": [
+        "artificial-intelligence",
+        "large-language-model"
+      ],
+      "ideas": [
+        {
+          "title": "LLM 학습비 견적 계산기",
+          "target_user": "사내 AI 교육을 준비하는 개발 리더",
+          "what": "데이터 규모·모델 크기·GPU 종류를 넣으면 예상 시간·비용·필요한 실험 단계를 계산해 줍니다.",
+          "why_now": "작은 모델을 직접 학습해 보는 수요가 커지며 현실적인 예산 감각이 필요합니다.",
+          "mvp": "세 가지 모델 크기와 주요 GPU의 비용 계산",
+          "difficulty": "쉬움",
+          "monetization": "교육기관용 실습 커리큘럼 판매"
+        },
+        {
+          "title": "작은 모델 튜닝 실험장",
+          "target_user": "LLM 원리를 배우는 대학생과 주니어 ML 엔지니어",
+          "what": "토크나이저·데이터·학습률을 바꾸고 품질 변화를 비교하는 브라우저 기반 실습 노트입니다.",
+          "why_now": "작은 모델은 짧은 시간에 실험 결과를 보며 학습하기 좋습니다.",
+          "mvp": "사전 준비된 10M 모델의 파라미터 비교 그래프",
+          "difficulty": "보통",
+          "monetization": "강좌·실습 환경 이용권"
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "name": "google-research/paper-orchestra",
+      "url": "https://github.com/google-research/paper-orchestra",
+      "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+      "description_ko": "AI 연구 논문 작성을 자동화하는 멀티 에이전트 프레임워크입니다.",
+      "language": "Python",
+      "stars": 2919,
+      "stars_today": 1175,
+      "topics": [
+        "ai-research-assistant",
+        "multi-agent-systems"
+      ],
+      "ideas": [
+        {
+          "title": "논문 읽기 모임 진행 도우미",
+          "target_user": "대학원 스터디 리더",
+          "what": "논문 PDF에서 발표 순서·핵심 그림·토론 질문·용어 카드를 만들어 모임을 준비합니다.",
+          "why_now": "연구 업무의 역할 분담을 에이전트로 나누는 패턴이 빠르게 성숙하고 있습니다.",
+          "mvp": "PDF 하나에서 요약, 질문 5개, 발표 슬라이드 개요 생성",
+          "difficulty": "보통",
+          "monetization": "랩 단위 월 구독"
+        },
+        {
+          "title": "실험 재현 체크리스트 생성기",
+          "target_user": "논문을 구현하려는 ML 엔지니어",
+          "what": "논문과 저장소 링크를 입력하면 데이터·하이퍼파라미터·평가 지표별 재현 작업 목록을 만듭니다.",
+          "why_now": "논문 작성 자동화 기술은 반대로 재현 가능성을 구조화하는 데도 쓸 수 있습니다.",
+          "mvp": "방법론 섹션에서 체크리스트 Markdown 생성",
+          "difficulty": "보통",
+          "monetization": "팀 지식베이스·실험 추적 연동 유료화"
+        }
+      ]
+    }
+  ]
 }

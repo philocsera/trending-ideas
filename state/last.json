@@ -1,20 +1,22 @@
 {
   "version": 1,
-  "date": "2026-10-19",
-  "captured_at": "2026-10-19T07:00:17+0900",
+  "date": "2026-11-18",
+  "captured_at": "2026-11-18T08:09:01+09:00",
   "repos": [
-    "madslorentzen/ai-job-search",
-    "anthropics/claude-plugins-official",
-    "anomalyco/opencode",
+    "elementalsouls/claude-bughunter",
+    "mvanhorn/last30days-skill",
+    "alibaba/open-code-review",
+    "tencent/loopforge",
+    "dream-num/univer",
+    "getarcaneapp/arcane",
+    "google-labs-code/stitch-skills",
     "cursor/plugins",
-    "ruvnet/ruflo",
-    "akitaonrails/ai-memory",
-    "stablyai/orca",
-    "hkuds/cli-anything",
-    "debpalash/voicestudio",
-    "android/skills",
-    "mlabonne/llm-course",
-    "kruk2/jasna",
-    "comfy-org/comfyui"
+    "obra/superpowers",
+    "ag-ui-protocol/ag-ui",
+    "backnotprop/plannotator",
+    "sveltejs/svelte",
+    "affaan-m/ecc",
+    "jingyaogong/minimind",
+    "google-research/paper-orchestra"
   ]
 }
